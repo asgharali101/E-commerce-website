@@ -1,0 +1,3043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bg2.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commere Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="lg:px-0 md:px-4">
+
+    <div class="bg-orange-500">
+      <nav
+        class="relative md:container md:mx-auto mx-6 flex items-center space-x-4 py-4 md:px-6"
+      >
+        <!--Baar -->
+        <div class="md:max-w-[05%] md:pt-1">
+          <!-- bar section -->
+          <button
+            class="relative group hover:scale-110 hover:translate-y-1 duration-1000"
+            onclick="buttonShow()"
+          >
+            <img
+              class="w-8 h-8 opacity-0 group-focus:opacity-100"
+              src="images/close-removebg-preview (1).png"
+              alt=""
+            />
+            <img
+              class="w-[100%] absolute top-1 group-focus:opacity-0"
+              src="/images/icons8-menu-96 (1).png"
+              alt=""
+            />
+          </button>
+          <div
+            id="menu"
+            class="z-10 shadow-lg absolute hidden md:hidden py-4 bg-white top-[91px] left-0 items-center"
+          >
+            <ul class="items-center">
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-36 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="features.html"
+                  >features</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="contact.html"
+                  >contact</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="shop.html"
+                  >shop</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                class="hover:bg-orange-500 mx-3 my-4 text-base bg-white hover:text-white text-orange-500 px-5 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  categories,and logo -->
+        <div class="md:flex relative items-center">
+          <!-- logo -->
+          <a
+            href="index.html"
+            class="flex items-center cursor-pointer px-2 hover:scale-105 duration-1000"
+          >
+            <h2
+              class="md:text-2xl text-base italic mr-1 px-3 py-[1px] text-orange-500 font-bold bg-white rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+            >
+              Ali's
+            </h2>
+            <span class="md:text-lg text-xs text-white font-bold">Shop</span>
+          </a>
+
+          <!-- categories -->
+          <div class="md:block hidden cursor-pointer pt-1 md:px-5 px-2 w-full">
+            <div
+              class="hover:scale-105 hover:translate-y-1 duration-1000 flex items-center"
+              onclick="categoryButton()"
+            >
+              <h2 class="md:text-base text-xs pb-1 font-medium text-white">
+                categroies
+              </h2>
+              <p
+                class="text-[12px] rotate-90 pl-1 -pb-5 font-semibold text-white"
+              >
+                >
+              </p>
+            </div>
+
+            <div
+              id="categorySec"
+              class="z-10 absolute hidden top-20 lg:right-5 right-1 bg-white shadow-2xl group-hover:block py-6 space-y-2"
+            >
+              <h4 class="text-base font-medium px-6">select categories</h4>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer py-2 px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Grogeries & Pets</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-52"></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full z-10 absolute md:left-[20.5rem] left-52 shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Cock pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peanuts Pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Coconut feds</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Dark-Chocolate</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Peanuts</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Food Casts</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Health & Beauty</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Women's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block py-4 w-full absolute md:left-[20.5rem] shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Lux Suban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Bio Amla</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier HairColor</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Fresher</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunto Color</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Men's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-3 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">SunSilk Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Humaliyai Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Gillete Shaw</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Saban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunts Wash</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Mother & Babby</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home & Life</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Machine Tools</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-10 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Car Gairbox</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Screw Tayar</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Drum Body</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Water Body</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">AirPressure</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Acid Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Tooler Screw</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Electricnic Devices</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-3 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">TV & Home Appliances</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home</h4>
+              </div>
+            </div>
+          </div>
+
+          <!--   -->
+        </div>
+
+        <!-- input -->
+        <div class="lg:w-[48%] w-[80%]">
+          <input
+            class="text-base text-gray-600 py-2 mt-1 px-4 w-full rounded-md focus:border-red-500 border border-white outline-none focus:ring-1 focus:ring-orange-500"
+            type="text"
+            placeholder="Search in Ali's Shop"
+          />
+        </div>
+
+        <!-- input right bars -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <!-- login&sign -->
+          <div class="flex items-center">
+            <div class="flex space-x-2 items-center">
+              <img
+                class="cursor-pointer w-6 h-6"
+                src="/images/icons8-user-100.png"
+                alt=""
+              />
+              <h4
+                onclick="loginButton()"
+                class="text-sm font-semibold text-white cursor-pointer"
+              >
+                login
+              </h4>
+
+              <!-- hidden form -->
+              <div
+                id="loginForm"
+                class="z-10 hidden absolute top-[88px] right-32 w-[40%] p-7 shadow bg-fuchsia-100 rounded-md justify-center"
+              >
+                <!-- logo -->
+                <div
+                  class="flex pb-4 pt-8 items-center justify-center cursor-pointer px-2 hover:scale-105 duration-1000"
+                >
+                  <h2
+                    class="md:text-3xl text-base italic mr-1 px-3 py-[1px] text-white font-bold bg-orange-500 rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+                  >
+                    Ali's
+                  </h2>
+                  <span class="md:text-xl text-xs text-orange-500 font-bold"
+                    >Shop</span
+                  >
+                </div>
+                <div class="space-y-3">
+                  <div class="flex space-x-8 items-center justify-center">
+                    <div>
+                      <h2 class="text-xl font-semibold py-2">First Name</h2>
+                      <input
+                        id="firstName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div>
+                      <h2 class="text-xl font-semibold py-[6px]">Last Name</h2>
+                      <input
+                        id="lastName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">
+                      Email Address
+                    </h2>
+                    <input
+                      id="email"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="email"
+                      placeholder="Enter Email Address"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Phone Number</h2>
+                    <input
+                      id="phoneNumber"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="number"
+                      placeholder="Enter Phone Number"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Text Message</h2>
+                    <input
+                      id="textMessage"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2 pb-28 placeholder:text-start"
+                      type="text"
+                      placeholder="Enter Text Message"
+                    />
+                  </div>
+                  <button
+                    onclick="submitButton()"
+                    class="w-full text-center py-2 text-lg font-semibold bg-orange-500 shadow-lg rounded-md text-white hover:bg-orange-600"
+                  >
+                    Submit Your Form
+                  </button>
+                  <div class="flex items-center justify-center space-x-2">
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-gray-700 cursor-pointer"
+                    >
+                      Create a New Account?
+                    </h2>
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-blue-600 hover:text-blue-700 cursor-pointer"
+                    >
+                      Sign up
+                    </h2>
+                  </div>
+                  <h2
+                    id="submitForm"
+                    class="hidden top-0 px-6 absolute text-green-400 text-lg font-semibold bg-white shadow-lg rounded-md p-4 border border-green-400"
+                  >
+                    Congratulations! 🎉 Your form has been successfully
+                    submitted. We'll send you an email shortly.
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- |||||| -->
+            <h2 class="text-sm font-semibold pl-3 pr-4 text-white">|</h2>
+
+            <h2 onclick="signupButton()" class="text-sm font-semibold text-white">Sign up</h2>
+            <div
+              id="login-popup"
+              tabindex="-1"
+              class="absolute hidden w-1/2  top-16 right-0 z-10 h-full items-center justify-center"
+            >
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                  <button
+                    type="button"
+                    class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="#c6c7c7"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        cliprule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close popup</span>
+                  </button>
+
+                  <div class="p-5">
+                    <h3 class="text-2xl mb-0.5 font-medium"></h3>
+                    <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+                    <div class="text-center">
+                      <p
+                        class="mb-3 text-2xl font-semibold leading-5 text-slate-900"
+                      >
+                        Login to your account
+                      </p>
+                      <p class="mt-2 text-sm leading-4 text-slate-600">
+                        You must be logged in to perform this action.
+                      </p>
+                    </div>
+
+                    <div class="mt-7 flex flex-col gap-2">
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/512317/github-142.svg"
+                          alt="GitHub"
+                          class="h-[18px] w-[18px]"
+                        />
+                        Continue with GitHub
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/475656/google-color.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with Google
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/448234/linkedin.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with LinkedIn
+                      </button>
+                    </div>
+
+                    <div
+                      class="flex w-full items-center gap-2 py-6 text-sm text-slate-600"
+                    >
+                      <div class="h-px w-full bg-slate-200"></div>
+                      OR
+                      <div class="h-px w-full bg-slate-200"></div>
+                    </div>
+
+                    <form class="w-full">
+                      <label for="email" class="sr-only">Email address</label>
+                      <input
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required=""
+                        class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Email Address"
+                        value=""
+                      />
+                      <label for="password" class="sr-only">Password</label>
+                      <input
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        required=""
+                        class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Password"
+                        value=""
+                      />
+                      <p class="mb-3 mt-2 text-sm text-gray-500">
+                        <a
+                          href="/forgot-password"
+                          class="text-blue-800 hover:text-blue-600"
+                          >Reset your password?</a
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+                      >
+                        Continue
+                      </button>
+                    </form>
+
+                    <div class="mt-6 text-center text-sm text-slate-600">
+                      Don't have an account?
+                      <a href="/signup" class="font-medium text-[#4285f4]"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- lang &cart -->
+          <div class="flex items-center space-x-3">
+            <!-- lang -->
+            <div class="group cursor-pointer">
+              <button class="flex items-center">
+                <h2 class="text-xl pb-1 font-semibold text-white">@</h2>
+                <h2 class="text-sm font-semibold text-white">EN</h2>
+                <p class="text-[12px] rotate-90 pl-1 font-semibold text-white">
+                  >
+                </p>
+              </button>
+
+              <div
+                class="hidden z-10 absolute top-16 right-24 bg-white shadow-xl group-hover:block p-5 space-y-3 pr-20"
+              >
+                <h4 class="text-xs font-medium">select language</h4>
+
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+              </div>
+            </div>
+            <!-- cart-image -->
+            <div onclick="cartButton()">
+              <img
+                class="hover:scale-110 duration-1000 w-7 h-7 cursor-pointer"
+                src="/images/icons8-cart-96.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              id="cartForm"
+              class="z-10 absolute hidden right-10 top-2 w-[34%] p-4 mx-auto mt-16"
+            >
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div
+                  class="flex items-center justify-between px-4 py-3 bg-gray-200"
+                >
+                  <h1 class="text-lg font-bold">Shopping Cart</h1>
+                  <span class="text-gray-600">(3 items)</span>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$29.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$19.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$24.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-4 py-3 bg-gray-200">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-lg">Total:</span>
+                    <span class="font-bold text-lg">$74.97</span>
+                  </div>
+                  <button
+                    class="block w-full mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- mid section -->      
+    <section
+      class="md:container justify-center  lg::mx-auto mx-4 flex flex-col lg:w-full lg:flex-row space-x-0 lg:space-x-3 space-y-6 lg:space-y-0 py-10"
+    >
+      <!--left side  -->
+      <div
+        class="bg-[url('/images/christopher-lemercier-KdcUWqkuqvE-unsplash.jpg')] border-solid border-2 border-orange-500 bg-cover rounded-md px-2"
+      >
+        <h2
+          class="md:pt-[24rem] pt-56 pb-5 md:px-0 text-center text-3xl font-semibold text-white"
+        >
+        Shop Smarter, Shop Better </br>at Ali Shop
+        </h2>
+        <div class="flex justify-center md:justify-around space-x-3 pb-10">
+          <button
+            onclick="buyButton()"
+            class="hover:bg-orange-500 text-lg hover:text-white text-orange-500 px-7 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+          >
+            Buy now
+          </button>
+          <button
+            onclick="buyButton()"
+            class="bg-orange-500 text-lg text-white hover:bg-white hover:text-orange-500 px-7 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div>
+        <!-- two div -->
+        <div class="flex md:space-x-4 space-x-3 mb-4">
+          <div
+            class="lg:w-full w-1/2 bg-[url('/images/pexels-anna-shvets-3962285.png')] bg-center bg-cover rounded-md"
+          >
+            <div
+              class="flex md:justify-around justify-center space-x-6 md:space-x-14 pt-[12rem] pb-10 md:px-12"
+            >
+              <button
+                onclick="buyButton()"
+                class="hover:bg-orange-500 lg:text-lg text-base bg-white hover:text-white text-orange-500 px-1 lg:px-7 py-1 md:py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Buy now
+              </button>
+              <button
+                onclick="buyButton()"
+                class="bg-orange-500 lg:text-lg text-base text-white hover:bg-white hover:text-orange-500 px-1 lg:px-7 py-1 md:py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="lg:w-full w-1/2 bg-[url('/images/daniel-lee-hwu_Qo1eWlI-unsplash.jpg')] bg-cover bg-center rounded-md"
+          >
+            <div
+              class="flex lg:justify-around justify-center space-x-6 md:space-x-14 pt-[12rem] pb-10 md:px-12"
+            >
+              <button
+                onclick="buyButton()"
+                class="hover:bg-orange-500 lg:text-lg text-base bg-white hover:text-white text-orange-500 px-1 lg:px-7 py-1 lg:py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Buy now
+              </button>
+              <button
+                onclick="buyButton()"
+                class="bg-orange-500 lg:text-lg text-base text-white hover:bg-white hover:text-orange-500 px-1 lg:px-7 py-1 lg:py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[url('/images/pexels-rene-asmussen-3167310.png')] bg-cover bg-right rounded-md"
+        >
+          <h2
+            class="pt-[8rem] pb-5 text-center md:px-20 text-2xl font-semibold text-white"
+          >
+          "Indulge in Ali Shop's Exquisite Collection!"
+          <br />
+            Add a Touch of Elegance with Ali Shop Treasures!
+          </h2>
+          <div class="flex justify-around space-x-3 pb-10 md:px-12">
+            <button
+              onclick="buyButton()"
+              class="bg-orange-500 hover:bg-white text-lg hover:text-orange-500 text-white px-7 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+            >
+              Read more->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section>
+      <div
+        class="md:container py-12 md:mx-12 lg:mx-auto mx-6 grid grid-cols-2 lg:grid-cols-4 lg:gap-x-10 gap-y-8 lg:gap-y-0"
+      >
+        <!-- 1 -->
+        <div class="flex space-x-3 items-center">
+          <div>
+            <img
+              class="w-10 h-10 animate-bounce"
+              src="/images/hand-1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Secure Payment</h2>
+            <p class="text-sm text-gray-600">ALL CARDS ACCEPTED</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex space-x-3 items-center">
+          <div>
+            <img
+              class="animate-bounce w-10 h-10"
+              src="/images/customer-service-2.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Online Support</h2>
+            <p class="text-sm text-gray-600 font-MEDIUM">TECHNICAL 24/7</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flex space-x-3 items-center">
+          <div>
+            <img
+              class="animate-bounce w-10 h-10"
+              src="/images/truck-1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Free Shipping</h2>
+            <p class="text-sm text-gray-600 font-MEDIUM">ON ALL ORDERS</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="flex space-x-3 items-center">
+          <div>
+            <img
+              class="animate-bounce w-10 h-10"
+              src="/images/discount-2.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Discount Online</h2>
+            <p class="text-sm text-gray-600 font-MEDIUM">WEEKEND SELLS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- products Section -->
+    <section class="">
+      <!-- heading -->
+      <div class="py-16">
+        <h2 class="text-base pb-1 text-center font-semibold">
+          TOP SELL ON THIS WEEK
+        </h2>
+        <div class="flex md:space-x-2 items-center justify-center">
+          <p
+            class="hidden lg:block animate-bounce border-dashed border-2 border-r-0 border-l-0 border-gray-700 py-2 px-10 md:px-20"
+          ></p>
+          <div class="flex items-center justify-center">
+            <div class="w-max">
+              <h1
+                class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white  lg:text-5xl md:2xl   text-xl font-bold">
+               "Elevate Your Wardrobe Now!"
+
+              </h1>
+            </div>
+          </div>
+          <p
+            class="hidden lg:block animate-bounce border-dashed border-2 border-r-0 border-l-0 border-gray-700 py-2 px-10 md:px-20"
+          ></p>
+        </div>
+        <p class="text-center text-gray-500 md:w-1/2 mx-auto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nemo
+          tenetur dignissimos maxime quae voluptatum deleniti molestiae nostrum
+          hic dolor!
+        </p>
+      </div>
+
+      <div
+        class="container mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-x-12 space-y-12 md:space-y-0"
+      >
+        <!-- 1st product -->
+        <div class="">
+          <div
+            class="relative hover:scale-95 duration-1000 shadow cursor-pointer group overflow-hidden"
+          >
+            <img
+              class="duration-500"
+              src="images/1-Mens-Standard-Fit-Deconstructed-Knit-Blazer01-600x764.jpg"
+              alt=""
+            />
+            <img
+              class="absolute top-0 duration-500 group-hover:opacity-0"
+              src="/images/2-Mens-Standard-Fit-Deconstructed-Knit-Blazer02-600x764.jpg"
+              alt=""
+            />
+            <!-- button -->
+
+            <div
+              class="absolute group-hover:bottom-10 md:left-24 left-24 lg:left-16"
+            >
+              <button
+                class="hover:scale-105 hover:-translate-y-2 duration-1000 tracking-wider py-2 px-5 border-[1px] rounded-md font-semibold text-base hover:bg-orange-500 hover:text-white border-yellow-300 bg-white text-orange-500"
+              >
+                ADD TO CART
+              </button>
+              <img
+                class="absolute left-0 pt-2"
+                src="/images/Untitled-1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-col space-y-9">
+              <img
+                class="delay-200 w-7 h-7 hover:scale-110 hover:-translate-y-1 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-search-more-48.png"
+                alt=""
+              />
+              <img
+                class="delay-300 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-google-chat.png"
+                alt=""
+              />
+              <img
+                class="delay-500 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-14 group-hover:right-3 -right-16"
+                src="/images/icons8-user-shield-96.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- tittle&price -->
+          <div class="md:px-10 px-12 space-y-1 pt-3 text-center">
+            <h2 class="text-xl font-semibold">Mens-Standard-Fit</h2>
+            <h2>$120-$100</h2>
+          </div>
+        </div>
+
+        <!-- 2nd product -->
+        <div>
+          <div
+            class="relative hover:scale-95 duration-1000 shadow cursor-pointer group overflow-hidden"
+          >
+            <img
+              class="duration-500"
+              src="images/1Mens-Standard-Fit-Sweater-.jpg"
+              alt=""
+            />
+            <img
+              class="absolute top-0 duration-500 group-hover:opacity-0"
+              src="/images/2Mens-Standard-Fit-Sweater.jpg"
+              alt=""
+            />
+
+            <div
+              class="absolute group-hover:bottom-10 md:left-24 left-24 lg:left-16"
+            >
+              <button
+                class="hover:scale-105 hover:-translate-y-2 duration-1000 tracking-wider py-2 px-5 border-[1px] rounded-md font-semibold text-base hover:bg-orange-500 hover:text-white border-yellow-300 bg-white text-orange-500"
+              >
+                ADD TO CART
+              </button>
+              <img
+                class="absolute left-0 pt-2"
+                src="/images/Untitled-1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-col space-y-9">
+              <img
+                class="delay-200 w-7 h-7 hover:scale-110 hover:-translate-y-1 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-search-more-48.png"
+                alt=""
+              />
+              <img
+                class="delay-300 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-google-chat.png"
+                alt=""
+              />
+              <img
+                class="delay-500 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-14 group-hover:right-3 -right-16"
+                src="/images/icons8-user-shield-96.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- tittle&price -->
+          <div class="md:px-5 px-12 space-y-1 pt-3 text-center">
+            <h2 class="text-xl font-semibold">Standard-Fit-Sweater</h2>
+            <h2>$80-$70</h2>
+          </div>
+        </div>
+
+        <!-- 3rd product -->
+        <div>
+          <div
+            class="relative hover:scale-95 duration-1000 shadow cursor-pointer group overflow-hidden"
+          >
+            <img
+              class="duration-500"
+              src="images/1WD·NY-Black-Mens-Palm-Burgundy-1.jpg"
+              alt=""
+            />
+            <img
+              class="absolute top-0 duration-500 group-hover:opacity-0"
+              src="/images/WD·NY-Black-Mens-Palm-Burgundy-2.jpg"
+              alt=""
+            />
+
+            <div
+              class="absolute group-hover:bottom-10 md:left-24 left-24 lg:left-16"
+            >
+              <button
+                class="hover:scale-105 hover:-translate-y-2 duration-1000 tracking-wider py-2 px-5 border-[1px] rounded-md font-semibold text-base hover:bg-orange-500 hover:text-white border-yellow-300 bg-white text-orange-500"
+              >
+                ADD TO CART
+              </button>
+              <img
+                class="absolute left-0 pt-2"
+                src="/images/Untitled-1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-col space-y-9">
+              <img
+                class="delay-200 w-7 h-7 hover:scale-110 hover:-translate-y-1 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-search-more-48.png"
+                alt=""
+              />
+              <img
+                class="delay-300 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-google-chat.png"
+                alt=""
+              />
+              <img
+                class="delay-500 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-14 group-hover:right-3 -right-16"
+                src="/images/icons8-user-shield-96.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- tittle&price -->
+          <div class="md:px-5 px-8 space-y-1 pt-3 text-center">
+            <h2 class="text-xl font-semibold">Mens-Palm-Burgundy</h2>
+            <h2>$140-$120</h2>
+          </div>
+        </div>
+
+        <!-- 4th product -->
+        <div>
+          <div
+            class="relative hover:scale-95 duration-1000 shadow cursor-pointer group overflow-hidden"
+          >
+            <img
+              class="duration-500"
+              src="images/Mens-Standard-Fit-Short-Sleeve-1.jpg"
+              alt=""
+            />
+            <img
+              class="absolute top-0 duration-500 group-hover:opacity-0"
+              src="/images/Mens-Standard-Fit-Short-Sleeve-2.jpg"
+              alt=""
+            />
+
+            <div
+              class="absolute group-hover:bottom-10 md:left-24 left-24 lg:left-16"
+            >
+              <button
+                class="hover:scale-105 hover:-translate-y-2 duration-1000 tracking-wider py-2 px-5 border-[1px] rounded-md font-semibold text-base hover:bg-orange-500 hover:text-white border-yellow-300 bg-white text-orange-500"
+              >
+                ADD TO CART
+              </button>
+              <img
+                class="absolute left-0 pt-2"
+                src="/images/Untitled-1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-col space-y-9">
+              <img
+                class="delay-200 w-7 h-7 hover:scale-110 hover:-translate-y-1 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-search-more-48.png"
+                alt=""
+              />
+              <img
+                class="delay-300 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-6 group-hover:right-3 -right-16"
+                src="/images/icons8-google-chat.png"
+                alt=""
+              />
+              <img
+                class="delay-500 w-7 h-7 hover:scale-110 hover:translate-y-2 duration-1000 absolute top-14 group-hover:right-3 -right-16"
+                src="/images/icons8-user-shield-96.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- tittle&price -->
+          <div class="md:px-6 px-8 space-y-1 pt-3 text-center">
+            <h2 class="text-xl font-semibold">Fit-Short-Sleeve</h2>
+            <h2>$130-$120</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- image and text-side -->
+    <section class=" container mx-auto">
+      <div
+        class="w-full justify-center items-center  py-32 grid md:grid-cols-[52%_auto]  lg:gap-y-0 gap-y-10"
+      >
+        <!-- text-side -->
+        <div class="space-y-9">
+          <!-- 1 -->
+          <div class="flex space-x-3">
+            <div class="align-top md:w-[12%] w-[80%]">
+              <img class="w-12 h-12" src="/images/icons8-gift-100 (1).png" alt="" />
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold">
+                Discover Your Ideal Present              </h2>
+              <p class="text-xs font-semibold py-1 text-gray-600">
+                Gifts Galore
+              </p>
+              <p class="w-[80%]">
+                Explore our wide selection of gifts for every occasion. From heartfelt tokens to luxurious surprises, find the perfect gift that speaks volumes."
+              </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="flex space-x-3">
+            <div class="align-top md:w-[12%] w-[80%]">
+              <img class="w-[19rem] h-[3.4rem]" src="/images/icons8-one-free-96.png" alt="" />
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold">
+                Unwrap Your Free Surprise Today
+                <p class="text-xs font-semibold py-1 text-gray-600">
+                  A Gift Awaits You
+              </p>
+              <p class="w-[80%] text-base font-normal">
+                Claim your complimentary surprise from our selection of curated gifts. Experience joy with our exclusive token of appreciation just for you.  </p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="flex space-x-3">
+            <div class="align-top md:w-[12%] w-[80%]">
+              <img class="w-12 h-12" src="/images/icons8-mastercard-96 (2).png" alt="" />
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold">
+                Mastered Card Perks Revealed            </h2>
+              <p class="text-xs font-semibold py-1 text-gray-600">
+                Explore Exclusive Benefits
+              </p>
+              <p class="w-[80%]">
+                Discover the array of advantages awaiting you with our Mastered Card. From cashback rewards to travel benefits, elevate your lifestyle effortlessly.              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- image side -->
+        <div>
+          <img class="w-full h-[26rem]" src="/images/post7.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- products Section -->
+    <section class="pb-32">
+      <!-- heading -->
+      <div class="container mx-auto text-center pb-12">
+        <h2 class="text-4xl font-bold mb-4">Explore Our Products</h2>
+        <p class="text-lg">
+          Discover our range of high-quality products designed to meet your
+          needs and enhance your lifestyle.
+        </p>
+      </div>
+
+      <div
+        class="container mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:space-x-6 space-y-12 md:space-y-0"
+      >
+        <!-- 1st product -->
+        <div class="w-79 bg-white shadow rounded">
+          <div
+            class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+            style="background-image: url('images/Group-369.png')"
+          >
+            <div class="flex justify-between">
+              <input type="checkbox" />
+              <button class="hover:text-orange-500-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span
+                class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+              >
+                available
+              </span>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col items-center">
+            <p class="text-gray-400 font-light text-xs text-center">
+              Hammond robotics
+            </p>
+            <h1 class="text-gray-800 text-center mt-1">Sell Phone</h1>
+            <p class="text-center text-gray-800 mt-1">€1299</p>
+            <div class="inline-flex items-center mt-2">
+              <button
+                class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  />
+                </svg>
+              </button>
+              <div
+                class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+              >
+                2
+              </div>
+              <button
+                class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              class="py-2 px-4 bg-orange-500 text-white rounded hover:bg-orange-600 active:bg-orange-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+            >
+              Add to order
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2nd product -->
+        <div class="w-79 bg-white shadow rounded">
+          <div
+            class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+            style="background-image: url('images/ice-cream.png')"
+          >
+            <div class="flex justify-between">
+              <input type="checkbox" />
+              <button class="hover:text-orange-500-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span
+                class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+              >
+                available
+              </span>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col items-center">
+            <p class="text-gray-400 font-light text-xs text-center">
+              Grass Milk
+            </p>
+            <h1 class="text-gray-800 text-center mt-1">ice Cream</h1>
+            <p class="text-center text-gray-800 mt-1">€1079</p>
+            <div class="inline-flex items-center mt-2">
+              <button
+                class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  />
+                </svg>
+              </button>
+              <div
+                class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+              >
+                2
+              </div>
+              <button
+                class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              class="py-2 px-4 bg-orange-500 text-white rounded hover:bg-orange-600 active:bg-orange-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+            >
+              Add to order
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3rd product -->
+        <div class="w-79 bg-white shadow rounded">
+          <div
+            class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+            style="background-image: url('images/Coffee-Jar-800x800-1.png')"
+          >
+            <div class="flex justify-between">
+              <input type="checkbox" />
+              <button class="hover:text-orange-500-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span
+                class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+              >
+                available
+              </span>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col items-center">
+            <p class="text-gray-400 font-light text-xs text-center">
+              Nescafe Brand
+            </p>
+            <h1 class="text-gray-800 text-center mt-1">Coffee-Jar</h1>
+            <p class="text-center text-gray-800 mt-1">€1109</p>
+            <div class="inline-flex items-center mt-2">
+              <button
+                class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  />
+                </svg>
+              </button>
+              <div
+                class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+              >
+                2
+              </div>
+              <button
+                class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              class="py-2 px-4 bg-orange-500 text-white rounded hover:bg-orange-600 active:bg-orange-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+            >
+              Add to order
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4th product -->
+        <div class="w-79 bg-white shadow rounded">
+          <div
+            class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+            style="
+              background-image: url('images/Chinese-Sunflower-Oil-1000x1000-1-1024x829.png');
+            "
+          >
+            <div class="flex justify-between">
+              <input type="checkbox" />
+              <button class="hover:text-orange-500-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span
+                class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+              >
+                available
+              </span>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col items-center">
+            <p class="text-gray-400 font-light text-xs text-center">
+              Sunflower Oil
+            </p>
+            <h1 class="text-gray-800 text-center mt-1">Chinese-Sunflower</h1>
+            <p class="text-center text-gray-800 mt-1">€1299</p>
+            <div class="inline-flex items-center mt-2">
+              <button
+                class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  />
+                </svg>
+              </button>
+              <div
+                class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+              >
+                2
+              </div>
+              <button
+                class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              class="py-2 px-4 bg-orange-500 text-white rounded hover:bg-orange-600 active:bg-orange-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+            >
+              Add to order
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <div
+      class="relative px-8 py-28 pb-32 bg-white border-t border-gray-200 md:py-6 xl:px-0"
+    >
+      <div
+        id="pricing"
+        class="container flex flex-col items-center h-full max-w-6xl mx-auto"
+      >
+        <h2
+          class="my-5 text-base font-medium tracking-tight text-orange-500 uppercase"
+        >
+          Our Pricing
+        </h2>
+        <h3
+          class="w-full max-w-4xl px-8 mt-2 md:text-5xl text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 md:px-0"
+        >
+          Simple, Transparent Pricing for Everyone
+        </h3>
+
+        <div class="max-w-full mx-auto md:max-w-6xl sm:px-8">
+          <!-- Basic Pricing -->
+          <div class="relative flex flex-col items-center sm:flex-row">
+            <div
+              class="hover:scale-105 hover:-translate-y-4 duration-1000 relative z-0 w-11/12 max-w-sm my-8 border border-gray-200 rounded-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-mr-4"
+            >
+              <div
+                class="overflow-hidden text-black bg-white border-t border-gray-100 rounded-lg shadow-sm"
+              >
+                <div
+                  class="block max-w-sm px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-6"
+                >
+                  <h3
+                    class="p-3 text-lg font-bold tracking-wide text-center uppercase"
+                  >
+                    Basic<span class="ml-2 font-light">Plan</span>
+                  </h3>
+                  <h4
+                    class="flex items-center justify-center pb-6 text-4xl font-bold text-center text-gray-900"
+                  >
+                    <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>48
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    In our basic plan you can take advantage of all these
+                    features below.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap md:px-0 lg:px-8 px-6 mt-8">
+                  <ul>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >Awesome Feature</span
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >And Another Cool Feature</span
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >One More Feature</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex items-center p-8 uppercase">
+                  <a
+                    href="#_"
+                    class="block w-full md:px-2 px-6 py-4 mt-3 md:text-sm text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-orange-500"
+                    >Select This Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Pro Pricing -->
+            <div
+              class="hover:scale-105 hover:translate-y-6 duration-1000 relative z-10 w-full max-w-md my-8 bg-white rounded-lg shadow-lg sm:w-2/3 lg:w-1/3 sm:my-5"
+            >
+              <div
+                class="py-4 text-sm font-semibold leading-none tracking-wide text-center text-white uppercase bg-orange-500 rounded-t"
+              >
+                Most Popular
+              </div>
+              <div
+                class="block max-w-sm md:px-2 px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-6"
+              >
+                <h3
+                  class="p-3 pb-1 text-lg font-bold tracking-wide text-center uppercase"
+                >
+                  Pro<span class="ml-2 font-light">Plan</span>
+                </h3>
+                <h4
+                  class="flex items-center justify-center pb-6 text-5xl font-bold text-center text-gray-900"
+                >
+                  <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>98
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Our most popular package is the Pro Plan which gives you
+                  access to the following:
+                </p>
+              </div>
+              <div class="flex justify-start md:pl-5 lg:pl-12 pl-12 mt-8 sm:justify-start">
+                <ul>
+                  <li class="flex items-center">
+                    <div class="p-2 text-orange-500 rounded-full fill-current">
+                      <svg
+                        class="w-6 h-6 align-middle"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="ml-3 md:ml-0 text-lg text-gray-700"
+                      >Really Cool Features</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <div class="p-2 text-orange-500 rounded-full fill-current">
+                      <svg
+                        class="w-6 h-6 align-middle"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="ml-3 md:ml-0 text-lg text-gray-700"
+                      >Another Cool Feature</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <div class="p-2 text-orange-500 rounded-full fill-current">
+                      <svg
+                        class="w-6 h-6 align-middle"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="ml-3 md:ml-0 text-lg text-gray-700">And One More</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex items-center p-8 uppercase">
+                <a
+                  href="#_"
+                  class="block w-full md:px-2 px-6 py-4 mt-3 md:text-sm text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-orange-500"
+                  >Select This Plan</a
+                >
+              </div>
+            </div>
+            <!-- Premium Pricing -->
+            <div
+              class="hover:scale-105 hover:-translate-y-6 duration-1000 relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-ml-4"
+            >
+              <div
+                class="overflow-hidden text-black bg-white rounded-lg shadow-lg"
+              >
+                <div
+                  class="block max-w-sm md:px-2  px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-8"
+                >
+                  <h3
+                    class="p-3 pb-1 text-lg font-bold tracking-wide text-center uppercase"
+                  >
+                    Premium<span class="ml-2 font-light">Plan</span>
+                  </h3>
+                  <h4
+                    class="flex items-center justify-center pb-6 text-4xl font-bold text-center text-gray-900"
+                  >
+                    <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>78
+                  </h4>
+                  <p class="pl-2 text-sm text-gray-600">
+                    With our premium plan you can take advantage of all the
+                    following features:
+                  </p>
+                </div>
+                <div class="flex flex-wrap md:px-4 lg:px-8 px-8 mt-8">
+                  <ul>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >Totally Tubular Feature</span
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >Super Cool Feature</span
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <div
+                        class="p-2 text-orange-500 rounded-full fill-current"
+                      >
+                        <svg
+                          class="w-6 h-6 align-middle"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                      </div>
+                      <span class="ml-3 md:ml-1 text-lg md:text-base lg:text-lg text-gray-700"
+                        >And One More</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex items-center p-8 uppercase">
+                  <a
+                    href="#_"
+                    class="block w-full md:px-2 px-6 py-4 mt-3 text-lg md:text-sm lg:text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-orange-500"
+                    >Select This Plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing Section -->
+
+
+    <!-- horizontal tab section -->
+    <div class="container mx-auto">
+      <div class="text-center pt-12 pb-10">
+        <p class="my-2 text-base font-medium tracking-tight text-orange-500 uppercase"
+            >
+              Our customers love our product
+            </p>
+            <h2
+              class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-5xl "
+            >
+            Quality Packed Products
+            </h2>
+      </div>
+    <section
+      class="grid lg:grid-cols-[45%_auto] grid-cols-1  md:justify-center lg:space-x-5 lg:space-y-0 space-y-4"
+    >
+      <!-- img -->
+      <div
+        class="bg-[url('images/post44.jpg')] rounded-md bg-center bg-cover"
+      >
+        <div class="pt-[13.9rem]">
+          <h2 class="text-2xl text-white font-medium text-center md:px-10 pb-12">
+            "Discover Unmatched Quality, Unbeatable Prices, and Endless Style at Ali's Shop – Your Ultimate Shopping Destination!"
+          </h2>
+          <div class="flex items-center justify-center pb-10">
+            <button
+              onclick="buyButton()"
+              class="hover:bg-orange-500 bg-white text-lg hover:text-white text-orange-500 px-7 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+            >
+              Read more->
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative container mx-auto">
+        <!-- button section -->
+        <div
+          class="bg-slate-300 rounded-full lg:px-6 flex flex-row w-full md:space-x-16 lg:space-x-7 py-1 space-x-3 px-1"
+        >
+          <button
+            onclick="recentTabbutton()"
+            class="md:px-10 lg:px-10 px-3 hover:border-solid border-[1px] hover:border-orange-500 duration-1000 md:py-[8px] py-1 rounded-full bg-gray-200 hover:bg-white lg:text-lg md:text-base text-xs font-medium"
+          >
+            Recent
+          </button>
+
+          <button
+            onclick="featureTabbutton()"
+            class="md:px-10 lg:px-10 px-3 hover:border-solid border-[1px] hover:border-orange-500 duration-1000 md:py-[8px] py-1 rounded-full bg-gray-200 hover:bg-white lg:text-lg md:text-base text-xs font-medium"
+          >
+            feature
+          </button>
+
+          <button
+            onclick="brandedTabbutton()"
+            class="md:px-10 lg:px-10 px-3 hover:border-solid border-[1px] hover:border-orange-500 duration-1000 md:py-[8px] py-1 rounded-full bg-gray-200 hover:bg-white lg:text-lg md:text-base text-xs font-medium"
+          >
+            branded
+          </button>
+          <button
+            onclick="latestTabbutton()"
+            class="md:px-10 lg:px-10 px-3 hover:border-solid border-[1px] hover:border-orange-500 duration-1000 md:py-[8px] py-1 rounded-full bg-gray-200 hover:bg-white lg:text-lg md:text-base text-xs font-medium"
+          >
+            latest
+          </button>
+        </div>
+
+        <!-- tab click products -->
+        <div>
+          <!-- main -->
+          <div class="flex justify-between pt-9 space-x-8 md:space-x-24 md:mx-7">
+            <!-- 1st section -->
+            <div class="flex flex-col justify-center text-center space-y-2">
+              <img
+                class="w-56 h-56"
+                src="/images/Fries-801x801-1-1024x860.png"
+                alt=""
+              />
+              <h2 class="md:text-2xl font-semibold">Hot Shootes</h2>
+              <h2>$10-$8</h2>
+              <button
+                class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- 2nd section -->
+            <div
+              class="flex flex-col justify-center text-center space-y-2 pt-8"
+            >
+              <img
+                class="w-56 h-48"
+                src="/images/Flaming-Hot-Cheetos-800x1490-1-1024x860.png"
+                alt=""
+              />
+              <h2 class="md:text-2xl font-semibold">Flaming-Hot</h2>
+              <h2>$9-$8</h2>
+              <button
+                class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- 3rd section -->
+            <div class="flex flex-col justify-center text-center space-y-2">
+              <img
+                class="w-56 h-56"
+                src="/images/Chinese-Sunflower-Oil-1000x1000-1.png"
+                alt=""
+              />
+              <h2 class="md:text-2xl font-semibold">Hot Shootes</h2>
+              <h2>$10-$8</h2>
+              <button
+                class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- recent tabs id -->
+          <div class="hidden absolute top-16 bg-white" id="recentTab">
+            <div class="flex justify-between pt-9 space-x-12 md:space-x-24">
+              <!-- 1st section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img
+                  class="w-56 h-56"
+                  src="/images/Coffee-Jar-800x800-1-1024x860.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Coffee-Jar</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 2nd section -->
+              <div
+                class="flex flex-col justify-center text-center space-y-2 pt-8"
+              >
+                <img class="w-56 h-48" src="/images/milkypak.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">Milky Pak</h2>
+                <h2>$700-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 3rd section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img class="w-56 h-56" src="/images/lipton.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">lipton Tea</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- features tabs id -->
+          <div class="hidden absolute top-16 bg-white" id="featureTab">
+            <div class="flex justify-between pt-9 space-x-12 md:space-x-24">
+              <!-- 1st section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img class="w-56 h-56" src="/images/ice-cream.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">ice-cream</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 2nd section -->
+              <div
+                class="flex flex-col justify-center text-center space-y-2 pt-8"
+              >
+                <img
+                  class="w-56 h-48"
+                  src="/images/Flaming-Hot-Cheetos-800x1490-1-1024x860.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Flaming-Hot</h2>
+                <h2>$700-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 3rd section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img class="w-56 h-56" src="/images/milo.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">Milo Pak</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- branded tabs -->
+          <div class="hidden absolute top-16 bg-white" id="brandedTab">
+            <div class="flex justify-between pt-9 space-x-12 md:space-x-24">
+              <!-- 1st section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img
+                  class="w-56 h-56"
+                  src="/images/Pink-Creamy-Ice-cream-Cone-801x1801-1-1024x860.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Pink-Creamy</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 2nd section -->
+              <div
+                class="flex flex-col justify-center text-center space-y-2 pt-8"
+              >
+                <img
+                  class="w-56 h-48"
+                  src="/images/Popcorn-1280x1018-2-150x150.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Popcorn</h2>
+                <h2>$700-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 3rd section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img
+                  class="w-56 h-56"
+                  src="/images/Chinese-Sunflower-Oil-1000x1000-1.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Sunflower</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- latest tabs -->
+          <div class="hidden absolute top-16 bg-white" id="latestTab">
+            <div class="flex justify-between pt-9 space-x-12 md:space-x-24">
+              <!-- 1st section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img
+                  class="w-56 h-56"
+                  src="/images/Dark-Chocolate-Cake-600x600-1-1024x860.png"
+                  alt=""
+                />
+                <h2 class="md:text-2xl font-semibold">Dark-Chocolate</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 2nd section -->
+              <div
+                class="flex flex-col justify-center text-center space-y-2 pt-8"
+              >
+                <img class="w-56 h-48" src="/images/dairymilk.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">Dairy Milk</h2>
+                <h2>$700-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- 3rd section -->
+              <div class="flex flex-col justify-center text-center space-y-2">
+                <img class="w-56 h-56" src="/images/lipton.png" alt="" />
+                <h2 class="md:text-2xl font-semibold">lipton Tea</h2>
+                <h2>$1000-$800</h2>
+                <button
+                  class="text-center duration-1000 py-[8px] rounded-full hover:bg-orange-500 hover:text-white ring-2 ring-orange-500 text-black text-lg font-medium"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    	<!--Start Background Animation Body-->
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--End Background Animation Body-->
+
+  
+    <!-- Start Testimonials -->
+    <div
+      id="testimonials"
+      class="flex items-center justify-center w-full px-8 py-10 border-t border-gray-200 md:py-32 xl:px-0"
+    >
+      <div class="max-w-6xl mx-auto">
+        <div class="flex-col items-center">
+          <div
+            class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center"
+          >
+            <p
+              class="my-5 text-base font-medium tracking-tight text-orange-500 uppercase"
+            >
+              Our customers love our product
+            </p>
+            <h2
+              class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
+            >
+              Testimonials
+            </h2>
+            <p class="my-6 text-xl font-medium text-gray-500">
+              Don't just take our word for it, read from our extensive list of
+              case studies and customer testimonials.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto xl:flex-row xl:max-w-full"
+          >
+            <div class="w-full xl:w-1/2 xl:pr-8">
+              <blockquote
+                class="hover:scale-105 hover:-translate-y-4 duration-1000 flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease"
+              >
+                <div class="flex flex-col pr-8">
+                  <div class="relative pl-12">
+                    <svg
+                      class="absolute left-0 w-10 h-10 text-orange-500 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 125"
+                    >
+                      <path
+                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
+                      />
+                    </svg>
+                    <p class="mt-2 text-base text-gray-600">
+                      I'm loving these templates! Very nice features and
+                      layouts.
+                    </p>
+                  </div>
+
+                  <h3
+                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate"
+                  >
+                    Asghar Ali
+                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate"
+                      >- CEO SomeCompany</span
+                    >
+                  </h3>
+                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+                </div>
+                <img
+                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                  src="images/admin-asghar.png"
+                  alt=""
+                />
+              </blockquote>
+              <blockquote
+                class="hover:scale-105 hover:-translate-y-4 duration-1000 flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0"
+              >
+                <div class="flex flex-col pr-10">
+                  <div class="relative pl-12">
+                    <svg
+                      class="absolute left-0 w-10 h-10 text-orange-500 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 125"
+                    >
+                      <path
+                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
+                      />
+                    </svg>
+                    <p class="mt-2 text-base text-gray-600">
+                      Really digging this service. Now I can quickly bootstrap
+                      any project.
+                    </p>
+                  </div>
+                  <h3
+                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate"
+                  >
+                    Kenny Jones
+                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate"
+                      >- CEO SomeCompany</span
+                    >
+                  </h3>
+                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+                </div>
+                <img
+                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                  src="images/team-member-1-300x300.jpg"
+                  alt=""
+                />
+              </blockquote>
+            </div>
+            <div class="w-full xl:w-1/2 xl:pl-8">
+              <blockquote
+                class="hover:scale-105 hover:-translate-y-4 duration-1000 flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0"
+              >
+                <div class="flex flex-col pr-10">
+                  <div class="relative pl-12">
+                    <svg
+                      class="absolute left-0 w-10 h-10 text-orange-500 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 125"
+                    >
+                      <path
+                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
+                      />
+                    </svg>
+                    <p class="mt-2 text-base text-gray-600">
+                      Extremely helpful in every single project we have
+                      released.
+                    </p>
+                  </div>
+
+                  <h3
+                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate"
+                  >
+                    Mike Smith
+                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate"
+                      >- CEO SomeCompany</span
+                    >
+                  </h3>
+                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+                </div>
+                <img
+                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                  src="images/team-member-2-300x300.jpg"
+                  alt=""
+                />
+              </blockquote>
+              <blockquote
+                class="hover:scale-105 hover:-translate-y-4 duration-1000 flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0"
+              >
+                <div class="flex flex-col pr-10">
+                  <div class="relative pl-12">
+                    <svg
+                      class="absolute left-0 w-10 h-10 text-orange-500 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 125"
+                    >
+                      <path
+                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
+                      />
+                    </svg>
+                    <p class="mt-2 text-base text-gray-600">
+                      Finally a quick and easy system I can use for any type of
+                      project.
+                    </p>
+                  </div>
+
+                  <h3
+                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate"
+                  >
+                    Molly Sanchez
+                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate"
+                      >- CEO SomeCompany</span
+                    >
+                  </h3>
+                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+                </div>
+                <img
+                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                  src="images/team-member-4-300x300.jpg"
+                  alt=""
+                />
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials-->
+
+    <!-- blog pages -->
+    <div class="container bg-white  md:pb-16  pb-0">
+      <div class="mx-auto max-w-full px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            From the blog
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Learn how to grow your business with our expert advice.
+          </p>
+        </div>
+
+        <!-- posts -->
+        <div class="grid lg:space-x-10 md:space-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="blogs">
+          <!-- ist post -->
+          <div
+            class=" mx-auto grid w-auto grid-cols-1 gap-x-8 gap-y-2 border-t border-gray-200 pt-2 sm:mt-16 sm:pt-16 "
+          >
+            <article
+              class="flex max-w-xl flex-col items-start justify-between"
+            >
+              <img class="w-[23.5rem] h-80 hover:scale-95 cursor-pointer rounded duration-1000 border border-orange-500" src="/images/post8.avif" alt="" />
+
+              <div class="mt-3 flex items-center gap-x-4 text-xs">
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >Mar 20, 2023</time
+                >
+                <a
+                  href="#"
+                  class="relative  rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-900 hover:text-white"
+                  >Marketing</a
+                >
+                <a
+                  class="text-gray-500 flex items-center gap-x-4 text-xs"
+                  href="#"
+                >
+                  admin
+                  <span
+                    class="relative  text-sm rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-orange-400 hover:text-white"
+                    >Asghar Ali</span
+                  >
+                </a>
+              </div>
+              <div class="group relative">
+                <h3
+                  class="hover:scale-105 duration-1000 mt-3 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-orange-400"
+                >
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    The Artistry of Exquisite Packing
+                  </a>
+                </h3>
+                <p
+                  class="mt-5 md:w-[23.6rem] line-clamp-3 text-sm leading-6 text-gray-600"
+                >
+                Experience the epitome of luxury as Ali's Shop unveils its masterful artistry in product packing. Each item is meticulously enveloped in premium materials, ensuring a grand unboxing experience that surpasses expectations....
+                </p>
+              </div>
+              <div class="relative mt-4 flex items-center gap-x-4">
+                <img
+                class="hover:scale-105 duration-1000 h-10 w-10 rounded-full bg-gray-50"
+                  src="/images/admin-asghar.png"
+                  alt=""
+                />
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-900 hover:text-orange-400">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Asghar Ali
+                    </a>
+                  </p>
+                  <p class="text-gray-600">Admin/CEO Co-Founder</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- More posts... -->
+          </div>
+
+          <!-- 2nd post -->
+          <div
+            class="mx-auto grid w-auto grid-cols-1 gap-x-8 gap-y-10 border-t border-gray-200 pt-2 sm:mt-16 sm:pt-16 lg:mx-0"
+          >
+            <article
+              class=" flex max-w-xl flex-col items-start justify-center"
+            >
+              <img class="w-[23.5rem] h-80 hover:scale-95 cursor-pointer duration-1000 border border-orange-500 rounded" src="/images/post6.webp" alt="" />
+
+              <div class="mt-3 flex items-center gap-x-4 text-xs">
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >Mar 16, 2020</time
+                >
+                <a
+                href="#"
+                class="relative  rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-900 hover:text-white"
+                >Marketing</a
+              >
+              <a
+                class="text-gray-500 flex items-center gap-x-4 text-xs"
+                href="#"
+              >
+                admin
+                <span
+                  class="relative  text-sm rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-orange-500 hover:text-white"
+                  >Asghar Ali</span
+                >
+              </div>
+              <div class="group relative">
+                <h3
+                  class="hover:scale-105 duration-1000 mt-3 text-2xl font-semibold  text-gray-900 group-hover:text-orange-500"
+                >
+                  <a href="#">
+                    <span class=" absolute inset-0"></span>
+                    Budget-Friendly Destinations                 </a>
+                </h3>
+                <p
+                  class="mt-5 md:w-[21.7rem] w-[98%] line-clamp-3 text-sm leading-6 text-gray-600"
+                >
+                Wanderlust on a budget? Explore our roundup of budget-friendly travel destinations guaranteed to satisfy your craving for adventure without breaking the bank...
+                </p>
+              </div>
+              <div class="relative mt-4 flex items-center gap-x-4">
+                <img
+                  src="/images/team-member-4-300x300.jpg"
+                  alt=""
+                  class="h-10 w-10 rounded-full bg-gray-50"
+                />
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-900 hover:text-orange-500">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Jass Mohan
+                    </a>
+                  </p>
+                  <p class="text-gray-600">Graphic designer</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- More posts... -->
+          </div>
+          <!-- 3rd post -->
+          <div
+            class="mx-auto grid w-auto grid-cols-1 gap-x-8 gap-y-10 border-t border-gray-200 pt-2 sm:mt-16 sm:pt-16 lg:mx-0"
+          >
+            <article
+              class="flex max-w-xl flex-col items-start justify-between"
+            >
+              <img class="w-[22rem] h-80 hover:scale-95 cursor-pointer duration-1000 rounded border border-orange-500" src="/images/post4.webp" alt="" />
+
+              <div class="mt-3 flex items-center gap-x-4 text-xs">
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >Mar 16, 2020</time
+                >
+                <a
+                href="#"
+                class="relative rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-900 hover:text-white"
+                >Marketing</a
+              >
+              <a
+                class="text-gray-500 flex items-center gap-x-4 text-xs"
+                href="#"
+              >
+                admin
+                <span
+                  class="relative text-sm rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-orange-500 hover:text-white"
+                  >Asghar Ali</span
+                >
+              </div>
+              <div class="group relative">
+                <h3
+                  class="hover:scale-105 duration-1000 mt-3 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-orange-500"
+                >
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Build Your Dream Home Office
+                  </a>
+                </h3>
+                <p
+                  class="mt-5 md:w-[22.6rem] w-[98%] line-clamp-3 text-sm leading-6 text-gray-600"
+                >
+                Create a productive and inspiring workspace with our step-by-step guide to building your dream home office. From ergonomic furniture to clever organization hacks, optimize your environment for maximum efficiency....
+                </p>
+              </div>
+              <div class="relative mt-4 flex items-center gap-x-4">
+                <img
+                  src="/images/team-member-1-300x300.jpg"
+                  alt=""
+                  class="h-10 w-10 rounded-full bg-gray-50"
+                />
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-900 hover:text-orange-500">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Joe Rothan
+                    </a>
+                  </p>
+                  <p class="text-gray-600">Co-Founder / CTO</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- More posts... -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container mx-auto grid lg:grid-cols-4 grid-cols-2 items-center gap-8 border-t border-orange-500 md:p-12 p-2">
+      <!-- First column: Logo and something new -->
+      <div class="col-span-1 space-y-6">
+          <!-- Logo -->
+            <!-- logo -->
+            <div
+            class="flex items-center cursor-pointer px-2 hover:scale-105 duration-1000"
+          >
+            <h2
+              class="md:text-3xl text-base italic mr-1 px-3 py-[1px] text-white font-bold bg-orange-500 rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+            >
+              Ali's
+            </h2>
+            <span class="md:text-xl text-xs text-orange-500 font-bold">Shop</span>
+          </div>
+          <!-- Something new -->
+          <p class="mt-12 text-gray-700">Explore our latest arrivals!</p>
+      </div>
+  
+      <!-- Second column: Navigation block list -->
+      <div class="col-span-1">
+          <ul class="list-none space-y-2">
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Home</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Shop</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">About Us</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Contact Us</a></li>
+          </ul>
+      </div>
+  
+      <!-- Third column: Footer navigation -->
+      <div class="col-span-1">
+          <ul class="list-none space-y-2">
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Community Guidelines</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">Terms & Conditions</a></li>
+              <li><a href="#" class="text-gray-500 text-lg underline cursor-pointer hover:text-orange-500 font-semibold">FAQ</a></li>
+          </ul>
+      </div>
+  
+      <!-- Fourth column: Input button flex and something new design -->
+      <div class="col-span-1 flex flex-col justify-center items-center">
+          <!-- Input button -->
+          <div class="md:flex md:space-x-2 space-y-2 md:space-y-0">
+            
+          <input type="text" placeholder="Enter your email" class="px-4 lg:py-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500">
+          <button class="lg:mt-4 md:px-6 px-16 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Subscribe</button>
+          </div>
+          <!-- Something new -->
+          <p class="mt-4 text-gray-700">Stay updated with our latest offers!</p>
+      </div>
+  </div>
+  
+  
+  
+    <script type="module" src="/main.js"></script>
+    <script>
+      function submitButton() {
+          // Add your submission logic here
+          // For demonstration purposes, I'll just show the success message and clear the form fields
+          const subButton = document.getElementById("submitForm");
+
+              if (subButton.style.display === "none") {
+                subButton.style.display = "block";
+              } else {
+                subButton.style.display = "none";
+              }
+
+          document.getElementById("submitForm").classList.remove("hidden");
+          document.getElementById("firstName").value = "";
+          document.getElementById("lastName").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phoneNumber").value = "";
+          document.getElementById("textMessage").value = "";
+      }
+  </script>
+
+    <script>
+    
+      function signupButton() {
+        const signupButton = document.getElementById("login-popup");
+
+        if (signupButton.style.display === "none") {
+          signupButton.style.display = "block";
+        } else {
+          signupButton.style.display = "none";
+        }
+      }
+      function cartButton() {
+        const cartButton = document.getElementById("cartForm");
+
+        if (cartButton.style.display === "none") {
+          cartButton.style.display = "block";
+        } else {
+          cartButton.style.display = "none";
+        }
+      }
+
+      function loginButton() {
+        const loginButton = document.getElementById("loginForm");
+
+        if (loginButton.style.display === "none") {
+          loginButton.style.display = "block";
+        } else {
+          loginButton.style.display = "none";
+        }
+      }
+
+    
+      const modeToggle = document.querySelector("#mode-toggle");
+
+modeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+      function categoryButton() {
+        const firstButton = document.getElementById("categorySec");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 1tap
+      function firstTap() {
+        const firstButton = document.getElementById("firstTapSection");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2tap
+      function secondTap() {
+        const secondButton = document.getElementById("secondTapSection");
+
+        if (secondButton.style.display === "none") {
+          secondButton.style.display = "block";
+        } else {
+          secondButton.style.display = "none";
+        }
+      }
+
+      // 3tap
+      function thridTap() {
+        const thridButton = document.getElementById("thridTapSection");
+
+        if (thridButton.style.display === "none") {
+          thridButton.style.display = "block";
+        } else {
+          thridButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function fourthTap() {
+        const fourthButton = document.getElementById("fourthTapSection");
+
+        if (fourthButton.style.display === "none") {
+          fourthButton.style.display = "block";
+        } else {
+          fourthButton.style.display = "none";
+        }
+      }
+
+      // 5th
+      function fivethTap() {
+        const fivethButton = document.getElementById("fivethTapSection");
+
+        if (fivethButton.style.display === "none") {
+          fivethButton.style.display = "block";
+        } else {
+          fivethButton.style.display = "none";
+        }
+      }
+
+      // harmbur menu
+      function buttonShow() {
+        const menuButton = document.getElementById("menu");
+
+        if (menuButton.style.display === "none") {
+          menuButton.style.display = "block";
+        } else {
+          menuButton.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- horizonat tab script -->
+    <script>
+      // 1tap
+      function recentTabbutton() {
+        const firstButton = document.getElementById("recentTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2ndrtap
+      function featureTabbutton() {
+        const firstButton = document.getElementById("featureTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 3rtap
+      function brandedTabbutton() {
+        const firstButton = document.getElementById("brandedTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function latestTabbutton() {
+        const firstButton = document.getElementById("latestTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bg2.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="">
+    <div class="bg-orange-500">
+      <nav
+        class="relative md:container md:mx-auto mx-6 flex items-center space-x-4 py-4 md:px-6"
+      >
+        <!--Baar -->
+        <div class="md:max-w-[05%] md:pt-1">
+          <!-- bar section -->
+          <button
+            class="relative group hover:scale-110 hover:translate-y-1 duration-1000"
+            onclick="buttonShow()"
+          >
+            <img
+              class="w-8 h-8 opacity-0 group-focus:opacity-100"
+              src="images/close-removebg-preview (1).png"
+              alt=""
+            />
+            <img
+              class="w-[100%] absolute top-1 group-focus:opacity-0"
+              src="/images/icons8-menu-96 (1).png"
+              alt=""
+            />
+          </button>
+          <div
+            id="menu"
+            class="z-10 shadow-lg absolute hidden md:hidden py-4 bg-white top-[91px] left-0 items-center"
+          >
+            <ul class="items-center">
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-36 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="features.html"
+                  >features</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="contact.html"
+                  >contact</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="shop.html"
+                  >shop</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                class="hover:bg-orange-500 mx-3 my-4 text-base bg-white hover:text-white text-orange-500 px-5 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  categories,and logo -->
+        <div class="md:flex relative items-center">
+          <!-- logo -->
+          <a
+            href="index.html"
+            class="flex items-center cursor-pointer px-2 hover:scale-105 duration-1000"
+          >
+            <h2
+              class="md:text-2xl text-base italic mr-1 px-3 py-[1px] text-orange-500 font-bold bg-white rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+            >
+              Ali's
+            </h2>
+            <span class="md:text-lg text-xs text-white font-bold">Shop</span>
+          </a>
+
+          <!-- categories -->
+          <div class="md:block hidden cursor-pointer pt-1 md:px-5 px-2 w-full">
+            <div
+              class="hover:scale-105 hover:translate-y-1 duration-1000 flex items-center"
+              onclick="categoryButton()"
+            >
+              <h2 class="md:text-base text-xs pb-1 font-medium text-white">
+                categroies
+              </h2>
+              <p
+                class="text-[12px] rotate-90 pl-1 -pb-5 font-semibold text-white"
+              >
+                >
+              </p>
+            </div>
+
+            <div
+              id="categorySec"
+              class="z-10 absolute hidden top-20 lg:right-5 right-1 bg-white shadow-2xl group-hover:block py-6 space-y-2"
+            >
+              <h4 class="text-base font-medium px-6">select categories</h4>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer py-2 px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Grogeries & Pets</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-52"></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full z-10 absolute md:left-[20.5rem] left-52 shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Cock pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peanuts Pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Coconut feds</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Dark-Chocolate</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Peanuts</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Food Casts</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Health & Beauty</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Women's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block py-4 w-full absolute md:left-[20.5rem] shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Lux Suban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Bio Amla</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier HairColor</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Fresher</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunto Color</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Men's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-3 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">SunSilk Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Humaliyai Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Gillete Shaw</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Saban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunts Wash</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Mother & Babby</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home & Life</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Machine Tools</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-10 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Car Gairbox</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Screw Tayar</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Drum Body</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Water Body</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">AirPressure</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Acid Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Tooler Screw</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Electricnic Devices</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-3 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">TV & Home Appliances</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home</h4>
+              </div>
+            </div>
+          </div>
+
+          <!--   -->
+        </div>
+
+        <!-- input -->
+        <div class="lg:w-[48%] w-[80%]">
+          <input
+            class="text-base text-gray-600 py-2 mt-1 px-4 w-full rounded-md focus:border-red-500 border border-white outline-none focus:ring-1 focus:ring-orange-500"
+            type="text"
+            placeholder="Search in Ali's Shop"
+          />
+        </div>
+
+        <!-- input right bars -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <!-- login&sign -->
+          <div class="flex items-center">
+            <div class="flex space-x-2 items-center">
+              <img
+                class="cursor-pointer w-6 h-6"
+                src="/images/icons8-user-100.png"
+                alt=""
+              />
+              <h4
+                onclick="loginButton()"
+                class="text-sm font-semibold text-white cursor-pointer"
+              >
+                login
+              </h4>
+
+              <!-- hidden form -->
+              <div
+                id="loginForm"
+                class="z-10 hidden absolute top-[88px] right-32 w-[40%] p-7 shadow bg-fuchsia-100 rounded-md justify-center"
+              >
+                <!-- logo -->
+                <div
+                  class="flex pb-4 pt-8 items-center justify-center cursor-pointer px-2 hover:scale-105 duration-1000"
+                >
+                  <h2
+                    class="md:text-3xl text-base italic mr-1 px-3 py-[1px] text-white font-bold bg-orange-500 rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+                  >
+                    Ali's
+                  </h2>
+                  <span class="md:text-xl text-xs text-orange-500 font-bold"
+                    >Shop</span
+                  >
+                </div>
+                <div class="space-y-3">
+                  <div class="flex space-x-8 items-center justify-center">
+                    <div>
+                      <h2 class="text-xl font-semibold py-2">First Name</h2>
+                      <input
+                        id="firstName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div>
+                      <h2 class="text-xl font-semibold py-[6px]">Last Name</h2>
+                      <input
+                        id="lastName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">
+                      Email Address
+                    </h2>
+                    <input
+                      id="email"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="email"
+                      placeholder="Enter Email Address"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Phone Number</h2>
+                    <input
+                      id="phoneNumber"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="number"
+                      placeholder="Enter Phone Number"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Text Message</h2>
+                    <input
+                      id="textMessage"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2 pb-28 placeholder:text-start"
+                      type="text"
+                      placeholder="Enter Text Message"
+                    />
+                  </div>
+                  <button
+                    onclick="submitButton()"
+                    class="w-full text-center py-2 text-lg font-semibold bg-orange-500 shadow-lg rounded-md text-white hover:bg-orange-600"
+                  >
+                    Submit Your Form
+                  </button>
+                  <div class="flex items-center justify-center space-x-2">
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-gray-700 cursor-pointer"
+                    >
+                      Create a New Account?
+                    </h2>
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-blue-600 hover:text-blue-700 cursor-pointer"
+                    >
+                      Sign up
+                    </h2>
+                  </div>
+                  <h2
+                    id="submitForm"
+                    class="hidden top-0 px-6 absolute text-green-400 text-lg font-semibold bg-white shadow-lg rounded-md p-4 border border-green-400"
+                  >
+                    Congratulations! 🎉 Your form has been successfully
+                    submitted. We'll send you an email shortly.
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- |||||| -->
+            <h2 class="text-sm font-semibold pl-3 pr-4 text-white">|</h2>
+
+            <h2
+              onclick="signupButton()"
+              class="text-sm font-semibold text-white cursor-pointer"
+            >
+              Sign up
+            </h2>
+            <div
+              id="login-popup"
+              tabindex="-1"
+              class="absolute hidden w-1/2 top-16 right-0 z-10 h-full items-center justify-center"
+            >
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                  <button
+                    type="button"
+                    class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="#c6c7c7"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        cliprule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close popup</span>
+                  </button>
+
+                  <div class="p-5">
+                    <h3 class="text-2xl mb-0.5 font-medium"></h3>
+                    <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+                    <div class="text-center">
+                      <p
+                        class="mb-3 text-2xl font-semibold leading-5 text-slate-900"
+                      >
+                        Login to your account
+                      </p>
+                      <p class="mt-2 text-sm leading-4 text-slate-600">
+                        You must be logged in to perform this action.
+                      </p>
+                    </div>
+
+                    <div class="mt-7 flex flex-col gap-2">
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/512317/github-142.svg"
+                          alt="GitHub"
+                          class="h-[18px] w-[18px]"
+                        />
+                        Continue with GitHub
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/475656/google-color.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with Google
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/448234/linkedin.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with LinkedIn
+                      </button>
+                    </div>
+
+                    <div
+                      class="flex w-full items-center gap-2 py-6 text-sm text-slate-600"
+                    >
+                      <div class="h-px w-full bg-slate-200"></div>
+                      OR
+                      <div class="h-px w-full bg-slate-200"></div>
+                    </div>
+
+                    <form class="w-full">
+                      <label for="email" class="sr-only">Email address</label>
+                      <input
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required=""
+                        class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Email Address"
+                        value=""
+                      />
+                      <label for="password" class="sr-only">Password</label>
+                      <input
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        required=""
+                        class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Password"
+                        value=""
+                      />
+                      <p class="mb-3 mt-2 text-sm text-gray-500">
+                        <a
+                          href="/forgot-password"
+                          class="text-blue-800 hover:text-blue-600"
+                          >Reset your password?</a
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+                      >
+                        Continue
+                      </button>
+                    </form>
+
+                    <div class="mt-6 text-center text-sm text-slate-600">
+                      Don't have an account?
+                      <a href="/signup" class="font-medium text-[#4285f4]"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- lang &cart -->
+          <div class="flex items-center space-x-3">
+            <!-- lang -->
+            <div class="group cursor-pointer">
+              <button class="flex items-center">
+                <h2 class="text-xl pb-1 font-semibold text-white">@</h2>
+                <h2 class="text-sm font-semibold text-white">EN</h2>
+                <p class="text-[12px] rotate-90 pl-1 font-semibold text-white">
+                  >
+                </p>
+              </button>
+
+              <div
+                class="hidden z-10 absolute top-16 right-24 bg-white shadow-xl group-hover:block p-5 space-y-3 pr-20"
+              >
+                <h4 class="text-xs font-medium">select language</h4>
+
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+              </div>
+            </div>
+            <!-- cart-image -->
+            <div onclick="cartButton()">
+              <img
+                class="hover:scale-110 duration-1000 w-7 h-7 cursor-pointer"
+                src="/images/icons8-cart-96.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              id="cartForm"
+              class="z-10 absolute hidden right-10 top-2 w-[34%] p-4 mx-auto mt-16"
+            >
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div
+                  class="flex items-center justify-between px-4 py-3 bg-gray-200"
+                >
+                  <h1 class="text-lg font-bold">Shopping Cart</h1>
+                  <span class="text-gray-600">(3 items)</span>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$29.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$19.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$24.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-4 py-3 bg-gray-200">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-lg">Total:</span>
+                    <span class="font-bold text-lg">$74.97</span>
+                  </div>
+                  <button
+                    class="block w-full mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section
+      class="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <div
+        class="my-10 mx-auto max-w-7xl px-4 items-center sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row"
+      >
+        <div class="sm:text-center lg:text-left">
+          <h1
+            class="text-2xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-4xl"
+          >
+            <span class="block xl:inline text-5xl"
+              >Have a question or <br />
+              need assistance? <br
+            /></span>
+            <span class="block text-orange-600 xl:inline">
+              Feel free to reach out to us.</span
+            >
+          </h1>
+          <p
+            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+          >
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
+          <!-- Button Section -->
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a
+                href="#"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
+              >
+                Get started
+              </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a
+                href="#"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-800 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+              >
+                Live demo
+              </a>
+            </div>
+          </div>
+          <!-- End of Button Section -->
+        </div>
+
+        <!--   Image Section     -->
+        <div class="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
+          <img
+            class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            alt=""
+          />
+        </div>
+        <!--   End of Image Section     -->
+      </div>
+    </section>
+
+    <!-- what our customer say -->
+    <div>
+      <div class="z-0 container mx-auto text-center pt-12">
+        <h2 class="text-4xl font-bold mb-6">What Our Customers Say</h2>
+        <p class="text-lg">
+          Read what our satisfied customers have to say about our products and
+          services.
+        </p>
+      </div>
+
+      <div
+        class="z-10 flex lg:flex-row flex-col items-center justify-center lg:space-x-8 lg:space-y-0 space-y-10"
+      >
+        <div
+          class="relative z-0 flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+        >
+          <div
+            class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+          >
+            <span
+              class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+            ></span>
+            <div class="relative z-10 mx-auto max-w-md">
+              <span
+                class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-10 w-10 text-white transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  />
+                </svg>
+              </span>
+              <div
+                class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+              >
+                <p>
+                  Perfect for learning how the framework works, prototyping a
+                  new idea, or creating a demo to share online.
+                </p>
+              </div>
+              <div class="pt-5 text-base font-semibold leading-7">
+                <p>
+                  <a
+                    href="#"
+                    class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                    >Read the docs &rarr;
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+        >
+          <div
+            class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+          >
+            <span
+              class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+            ></span>
+            <div class="relative z-10 mx-auto max-w-md">
+              <span
+                class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-10 w-10 text-white transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  />
+                </svg>
+              </span>
+              <div
+                class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+              >
+                <p>
+                  Perfect for learning how the framework works, prototyping a
+                  new idea, or creating a demo to share online.
+                </p>
+              </div>
+              <div class="pt-5 text-base font-semibold leading-7">
+                <p>
+                  <a
+                    href="#"
+                    class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                    >Read the docs &rarr;
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="z-0 relative flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+        >
+          <div
+            class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+          >
+            <span
+              class="absolute top-10 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+            ></span>
+            <div class="relative mx-auto max-w-md">
+              <span
+                class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-10 w-10 text-white transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  />
+                </svg>
+              </span>
+              <div
+                class="z-0 space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+              >
+                <p>
+                  Perfect for learning how the framework works, prototyping a
+                  new idea, or creating a demo to share online.
+                </p>
+              </div>
+              <div class="pt-5 text-base font-semibold leading-7">
+                <p>
+                  <a
+                    href="#"
+                    class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                    >Read the docs &rarr;
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="my-12 py-20">
+      <div
+        id="map"
+        class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+          width="100%"
+          height="480"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="container px-6 md:px-12">
+        <div
+          class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300"
+        >
+          <div class="flex flex-wrap">
+            <div
+              class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
+            >
+              <form>
+                <div class="relative mb-6" data-te-input-wrapper-init>
+                  <input
+                    type="text"
+                    class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                    id="exampleInput90"
+                  />
+                  <label
+                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                    for="exampleInput90"
+                    >Name
+                  </label>
+                </div>
+                <div class="relative mb-6" data-te-input-wrapper-init>
+                  <input
+                    type="email"
+                    class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                    id="exampleInput91"
+                  />
+                  <label
+                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                    for="exampleInput91"
+                    >Email address
+                  </label>
+                </div>
+                <div class="relative mb-6" data-te-input-wrapper-init>
+                  <textarea
+                    class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                  <label
+                    for="exampleFormControlTextarea1"
+                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                    >Message</label
+                  >
+                </div>
+                <div
+                  class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex"
+                >
+                  <input
+                    class="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent"
+                    type="checkbox"
+                    value=""
+                    id="exampleCheck96"
+                    checked
+                  />
+                  <label
+                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                    for="exampleCheck96"
+                  >
+                    Send me a copy of this message
+                  </label>
+                </div>
+                <button
+                  type="button"
+                  class="mb-6 w-full rounded bg-sky-500 text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal lg:mb-0"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+              <div class="flex flex-wrap">
+                <div
+                  class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12"
+                >
+                  <div class="flex items-start">
+                    <div class="shrink-0">
+                      <div
+                        class="inline-block rounded-md bg-sky-200 p-4 text-primary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-6 w-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold">Technical support</p>
+                      <p class="text-sm text-neutral-500">
+                        asgharburdi786@gmail.com
+                      </p>
+                      <p class="text-sm text-neutral-500">1-600-890-4567</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12"
+                >
+                  <div class="flex items-start">
+                    <div class="srink-0">
+                      <div
+                        class="inline-block rounded-md bg-sky-200 p-4 text-primary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="w-7 h-7"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold">Address</p>
+                      <p class="text-sm text-neutral-500">
+                        Sehwan-Sharif,<br />jamshoro 123<br />Sindh, Pakistan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:mb-12 lg:w-full lg:px-6 xl:w-6/12"
+                >
+                  <div class="align-start flex">
+                    <div class="shrink-0">
+                      <div
+                        class="inline-block rounded-md bg-sky-200 p-4 text-primary"
+                      >
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          class="w-7 h-7"
+                          viewBox="0 0 111.756 122.879"
+                          enable-background="new 0 0 111.756 122.879"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <path
+                              d="M27.953,5.569v96.769h19.792V5.569H37.456H27.953L27.953,5.569z M21.898,105.123V2.785C21.898,1.247,23.254,0,24.926,0 h12.53h13.316C52.443,0,53.8,1.247,53.8,2.785v102.338c0,1.537-1.356,2.783-3.028,2.783H24.926 C23.254,107.906,21.898,106.66,21.898,105.123L21.898,105.123z M13.32,17.704c1.671,0,3.027,1.247,3.027,2.785 s-1.355,2.784-3.027,2.784H7.352c-0.161,0-0.292,0.022-0.39,0.064c-0.129,0.056-0.276,0.166-0.429,0.325 c-0.161,0.167-0.281,0.346-0.353,0.528c-0.083,0.208-0.125,0.465-0.125,0.759v90.803c0,0.287,0.043,0.537,0.125,0.74l0.034,0.092 c0.068,0.135,0.165,0.264,0.284,0.383c0.126,0.125,0.258,0.217,0.39,0.27c0.123,0.051,0.279,0.074,0.466,0.074h97.052 c0.188,0,0.346-0.025,0.467-0.074c0.133-0.053,0.264-0.145,0.389-0.27c3.035-3.035,0.441,1.799,0.441-1.215V24.949 c0-3.667,3.039,2.357-0.477-1.288c-0.143-0.146-0.287-0.254-0.43-0.314c-0.113-0.048-0.246-0.075-0.391-0.075H62.563 c-1.672,0-3.027-1.247-3.027-2.784s1.355-2.785,3.027-2.785h41.842c1.041,0,2.029,0.204,2.943,0.597 c0.895,0.385,1.699,0.945,2.393,1.663c0.664,0.686,1.17,1.468,1.514,2.334c0.332,0.839,0.502,1.726,0.502,2.652v90.803 c0,0.938-0.168,1.826-0.502,2.654c-0.344,0.859-0.865,1.639-1.549,2.324c-0.701,0.703-1.506,1.234-2.398,1.598 c-0.906,0.367-1.879,0.551-2.902,0.551H7.352c-1.022,0-1.995-0.184-2.901-0.551c-0.894-0.363-1.698-0.896-2.399-1.598 c-0.621-0.623-1.107-1.33-1.45-2.107c-0.036-0.07-0.069-0.143-0.099-0.217C0.168,117.574,0,116.684,0,115.752V24.949 c0-0.921,0.17-1.811,0.504-2.652c0.342-0.863,0.849-1.648,1.512-2.334c0.683-0.707,1.488-1.263,2.393-1.652 c0.929-0.401,1.917-0.607,2.943-0.607H13.32L13.32,17.704z M65.902,29.03h27.049c0.803,0,1.566,0.145,2.291,0.431 c0.076,0.03,0.15,0.063,0.223,0.099c0.607,0.269,1.166,0.635,1.666,1.096c0.584,0.533,1.027,1.128,1.326,1.782 c0.047,0.104,0.088,0.21,0.119,0.317c0.225,0.584,0.34,1.189,0.34,1.812v12.611c0,0.744-0.156,1.45-0.459,2.118l-0.004,0.009 l0.004,0.002c-0.291,0.64-0.725,1.224-1.291,1.75c-0.58,0.546-1.227,0.956-1.932,1.231c-0.736,0.287-1.5,0.426-2.283,0.426H65.902 c-0.777,0-1.535-0.14-2.27-0.426c-0.693-0.269-1.33-0.668-1.912-1.198c-0.588-0.539-1.031-1.144-1.326-1.81 c-0.033-0.078-0.063-0.157-0.09-0.235c-0.234-0.605-0.35-1.228-0.35-1.867V34.567c0-0.723,0.146-1.424,0.445-2.099l-0.006-0.002 c0.295-0.666,0.738-1.271,1.326-1.81l0.037-0.032l-0.002-0.001c0.877-0.78,2.039-1.219,2.119-1.244 C64.537,29.147,65.215,29.03,65.902,29.03L65.902,29.03z M93.475,34.599h-28.08v12.547h28.08V34.599L93.475,34.599z M78.877,63.42 c1.072,0,2.01,0.41,2.807,1.207s1.188,1.734,1.188,2.785c0,1.148-0.389,2.104-1.188,2.865c-0.799,0.758-1.734,1.129-2.807,1.129 c-1.129,0-2.084-0.371-2.844-1.129c-0.76-0.762-1.148-1.717-1.148-2.865c0-1.051,0.391-1.988,1.148-2.785 S77.748,63.42,78.877,63.42L78.877,63.42z M90.977,63.42c1.072,0,2.008,0.41,2.805,1.207s1.189,1.734,1.189,2.785 c0,1.148-0.391,2.104-1.189,2.865c-0.799,0.758-1.732,1.129-2.805,1.129c-1.131,0-2.086-0.371-2.846-1.129 c-0.76-0.762-1.148-1.717-1.148-2.865c0-1.051,0.391-1.988,1.148-2.785S89.846,63.42,90.977,63.42L90.977,63.42z M66.662,75.518 c1.15,0,2.105,0.389,2.865,1.148s1.129,1.715,1.129,2.865c0,1.051-0.371,1.988-1.129,2.785s-1.715,1.209-2.865,1.209 c-1.053,0-1.988-0.412-2.785-1.209s-1.209-1.734-1.209-2.785c0-1.15,0.41-2.105,1.209-2.865S65.609,75.518,66.662,75.518 L66.662,75.518z M78.877,75.518c1.072,0,2.008,0.389,2.807,1.148s1.188,1.715,1.188,2.865c0,1.051-0.391,1.988-1.188,2.785 s-1.734,1.209-2.807,1.209c-1.129,0-2.086-0.412-2.844-1.209s-1.148-1.734-1.148-2.785c0-1.15,0.389-2.105,1.148-2.865 S77.748,75.518,78.877,75.518L78.877,75.518z M90.977,75.518c1.072,0,2.006,0.389,2.805,1.148s1.189,1.715,1.189,2.865 c0,1.051-0.393,1.988-1.189,2.785s-1.732,1.209-2.805,1.209c-1.131,0-2.088-0.412-2.846-1.209s-1.148-1.734-1.148-2.785 c0-1.15,0.389-2.105,1.148-2.865S89.846,75.518,90.977,75.518L90.977,75.518z M66.662,87.518c1.15,0,2.107,0.393,2.865,1.189 s1.129,1.773,1.129,2.922c0,1.053-0.369,1.988-1.129,2.787s-1.715,1.207-2.865,1.207c-1.053,0-1.986-0.408-2.785-1.207 s-1.209-1.734-1.209-2.787c0-1.148,0.412-2.125,1.209-2.922S65.609,87.518,66.662,87.518L66.662,87.518z M78.877,87.518 c1.072,0,2.01,0.393,2.807,1.189s1.188,1.773,1.188,2.922c0,1.053-0.389,1.988-1.188,2.787s-1.734,1.207-2.807,1.207 c-1.129,0-2.084-0.408-2.844-1.207s-1.148-1.734-1.148-2.787c0-1.148,0.391-2.125,1.148-2.922S77.748,87.518,78.877,87.518 L78.877,87.518z M90.977,87.518c1.072,0,2.008,0.393,2.805,1.189s1.189,1.773,1.189,2.922c0,1.053-0.391,1.988-1.189,2.787 s-1.732,1.207-2.805,1.207c-1.131,0-2.086-0.408-2.846-1.207s-1.148-1.734-1.148-2.787c0-1.148,0.391-2.125,1.148-2.922 S89.846,87.518,90.977,87.518L90.977,87.518z M78.877,99.617c1.072,0,2.008,0.389,2.807,1.188s1.188,1.734,1.188,2.807 c0,1.129-0.389,2.084-1.188,2.844s-1.734,1.148-2.807,1.148c-1.129,0-2.084-0.389-2.844-1.148s-1.148-1.715-1.148-2.844 c0-1.072,0.389-2.008,1.148-2.807S77.748,99.617,78.877,99.617L78.877,99.617z M66.662,63.42c1.15,0,2.107,0.41,2.865,1.207 s1.129,1.734,1.129,2.785c0,1.148-0.369,2.104-1.129,2.865c-0.76,0.758-1.715,1.129-2.865,1.129c-1.053,0-1.986-0.371-2.785-1.129 c-0.799-0.762-1.209-1.717-1.209-2.865c0-1.051,0.412-1.988,1.209-2.785S65.609,63.42,66.662,63.42L66.662,63.42z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold">Land Line</p>
+                      <p class="text-neutral-500">(0421) 431 2030</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:mb-12 xl:w-6/12"
+                >
+                  <div class="align-start flex">
+                    <div class="shrink-0">
+                      <div
+                        class="inline-block rounded-md bg-sky-200 p-4 text-primary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold">Mobile</p>
+                      <p class="text-neutral-500">+92-3192508544</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 sm:mx-auto xs:max-w-2xl sm:rounded-lg sm:px-10"
+    >
+      <div class="mx-auto px-5">
+        <div class="flex flex-col items-center">
+          <h2
+            class="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl"
+          >
+            FAQ
+          </h2>
+          <p class="mt-3 text-lg text-neutral-500 md:text-xl">
+            Frequenty asked questions
+          </p>
+        </div>
+        <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> How does the billing work?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                Springerdata offers a variety of billing options, including
+                monthly and annual subscription plans, as well as pay-as-you-go
+                pricing for certain services. Payment is typically made through
+                a credit card or other secure online payment method.
+              </p>
+            </details>
+          </div>
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> Can I get a refund for my subscription?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                We offer a 30-day money-back guarantee for most of its
+                subscription plans. If you are not satisfied with your
+                subscription within the first 30 days, you can request a full
+                refund. Refunds for subscriptions that have been active for
+                longer than 30 days may be considered on a case-by-case basis.
+              </p>
+            </details>
+          </div>
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> How do I cancel my subscription?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                To cancel your subscription, you can log in to your account and
+                navigate to the subscription management page. From there, you
+                should be able to cancel your subscription and stop future
+                billing.
+              </p>
+            </details>
+          </div>
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> Is there a free trial?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                We offer a free trial of our software for a limited time. During
+                the trial period, you will have access to a limited set of
+                features and functionality, but you will not be charged.
+              </p>
+            </details>
+          </div>
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> How do I contact support?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                If you need help with our platform or have any other questions,
+                you can contact the company's support team by submitting a
+                support request through the website or by emailing
+                support@ourwebsite.com.
+              </p>
+            </details>
+          </div>
+          <div class="py-5">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium"
+              >
+                <span> Do you offer any discounts or promotions?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
+                We may offer discounts or promotions from time to time. To stay
+                up-to-date on the latest deals and special offers, you can sign
+                up for the company's newsletter or follow it on social media.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark:bg-gray-800">
+      <div class="dark:bg-transparent">
+        <div class="mx-auto flex flex-col items-center py-12 sm:py-24">
+          <div
+            class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10"
+          >
+            <h1
+              class="text-4xl sm:text-5xl md:text-5xl mx-auto container w-/12 md:px-20 lg:text-5xl text-center text-gray-800 dark:text-white font-black leading-10"
+            >
+              Get More Features For Your
+              <span class="text-violet-800 dark:text-violet-500">Website</span>
+              designs.
+            </h1>
+            <p
+              class="mt-5 sm:mt-10 lg:w-10/12 text-gray-600 dark:text-gray-300 font-normal text-center text-xl"
+            >
+              A Community for Our E-commerce Shop
+            </p>
+          </div>
+          <div class="flex w-11/12 md:w-8/12 xl:w-6/12">
+            <div class="flex rounded-md w-full">
+              <input
+                type="text"
+                name="q"
+                class="w-full p-3 rounded-md rounded-r-none border border-gray-300 placeholder-current dark:bg-gray-500 dark:text-gray-300 dark:border-none"
+                placeholder="keyword"
+              />
+              <button
+                class="inline-flex items-center gap-2 bg-violet-700 text-white text-lg font-semibold py-3 px-6 rounded-r-md"
+              >
+                <span>Find</span>
+                <svg
+                  class="text-gray-200 h-5 w-5 p-0 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 56.966 56.966"
+                  style="enable-background: new 0 0 56.966 56.966"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+
+    <script>
+      function cartButton() {
+        const cartButton = document.getElementById("cartForm");
+
+        if (cartButton.style.display === "none") {
+          cartButton.style.display = "block";
+        } else {
+          cartButton.style.display = "none";
+        }
+      }
+
+      function loginButton() {
+        const loginButton = document.getElementById("loginForm");
+
+        if (loginButton.style.display === "none") {
+          loginButton.style.display = "block";
+        } else {
+          loginButton.style.display = "none";
+        }
+      }
+
+      function categoryButton() {
+        const firstButton = document.getElementById("categorySec");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 1tap
+      function firstTap() {
+        const firstButton = document.getElementById("firstTapSection");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2tap
+      function secondTap() {
+        const secondButton = document.getElementById("secondTapSection");
+
+        if (secondButton.style.display === "none") {
+          secondButton.style.display = "block";
+        } else {
+          secondButton.style.display = "none";
+        }
+      }
+
+      // 3tap
+      function thridTap() {
+        const thridButton = document.getElementById("thridTapSection");
+
+        if (thridButton.style.display === "none") {
+          thridButton.style.display = "block";
+        } else {
+          thridButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function fourthTap() {
+        const fourthButton = document.getElementById("fourthTapSection");
+
+        if (fourthButton.style.display === "none") {
+          fourthButton.style.display = "block";
+        } else {
+          fourthButton.style.display = "none";
+        }
+      }
+
+      // 5th
+      function fivethTap() {
+        const fivethButton = document.getElementById("fivethTapSection");
+
+        if (fivethButton.style.display === "none") {
+          fivethButton.style.display = "block";
+        } else {
+          fivethButton.style.display = "none";
+        }
+      }
+
+      // harmbur menu
+      function buttonShow() {
+        const menuButton = document.getElementById("menu");
+
+        if (menuButton.style.display === "none") {
+          menuButton.style.display = "block";
+        } else {
+          menuButton.style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      function signupButton() {
+        const signupButton = document.getElementById("login-popup");
+
+        if (signupButton.style.display === "none") {
+          signupButton.style.display = "block";
+        } else {
+          signupButton.style.display = "none";
+        }
+      }
+      function cartButton() {
+        const cartButton = document.getElementById("cartForm");
+
+        if (cartButton.style.display === "none") {
+          cartButton.style.display = "block";
+        } else {
+          cartButton.style.display = "none";
+        }
+      }
+
+      function loginButton() {
+        const loginButton = document.getElementById("loginForm");
+
+        if (loginButton.style.display === "none") {
+          loginButton.style.display = "block";
+        } else {
+          loginButton.style.display = "none";
+        }
+      }
+
+      const modeToggle = document.querySelector("#mode-toggle");
+
+      modeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+      function categoryButton() {
+        const firstButton = document.getElementById("categorySec");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 1tap
+      function firstTap() {
+        const firstButton = document.getElementById("firstTapSection");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2tap
+      function secondTap() {
+        const secondButton = document.getElementById("secondTapSection");
+
+        if (secondButton.style.display === "none") {
+          secondButton.style.display = "block";
+        } else {
+          secondButton.style.display = "none";
+        }
+      }
+
+      // 3tap
+      function thridTap() {
+        const thridButton = document.getElementById("thridTapSection");
+
+        if (thridButton.style.display === "none") {
+          thridButton.style.display = "block";
+        } else {
+          thridButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function fourthTap() {
+        const fourthButton = document.getElementById("fourthTapSection");
+
+        if (fourthButton.style.display === "none") {
+          fourthButton.style.display = "block";
+        } else {
+          fourthButton.style.display = "none";
+        }
+      }
+
+      // 5th
+      function fivethTap() {
+        const fivethButton = document.getElementById("fivethTapSection");
+
+        if (fivethButton.style.display === "none") {
+          fivethButton.style.display = "block";
+        } else {
+          fivethButton.style.display = "none";
+        }
+      }
+
+      // harmbur menu
+      function buttonShow() {
+        const menuButton = document.getElementById("menu");
+
+        if (menuButton.style.display === "none") {
+          menuButton.style.display = "block";
+        } else {
+          menuButton.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- horizonat tab script -->
+    <script>
+      // 1tap
+      function recentTabbutton() {
+        const firstButton = document.getElementById("recentTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2ndrtap
+      function featureTabbutton() {
+        const firstButton = document.getElementById("featureTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 3rtap
+      function brandedTabbutton() {
+        const firstButton = document.getElementById("brandedTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function latestTabbutton() {
+        const firstButton = document.getElementById("latestTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

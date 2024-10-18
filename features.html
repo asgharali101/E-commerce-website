@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bg2.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="">
+    <div class="bg-orange-500">
+      <nav
+        class="relative md:container md:mx-auto mx-6 flex items-center space-x-4 py-4 md:px-6"
+      >
+        <!--Baar -->
+        <div class="md:max-w-[05%] md:pt-1">
+          <!-- bar section -->
+          <button
+            class="relative group hover:scale-110 hover:translate-y-1 duration-1000"
+            onclick="buttonShow()"
+          >
+            <img
+              class="w-8 h-8 opacity-0 group-focus:opacity-100"
+              src="images/close-removebg-preview (1).png"
+              alt=""
+            />
+            <img
+              class="w-[100%] absolute top-1 group-focus:opacity-0"
+              src="/images/icons8-menu-96 (1).png"
+              alt=""
+            />
+          </button>
+          <div
+            id="menu"
+            class="z-10 shadow-lg absolute hidden md:hidden py-4 bg-white top-[91px] left-0 items-center"
+          >
+            <ul class="items-center">
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-36 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="features.html"
+                  >features</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="contact.html"
+                  >contact</a
+                >
+              </li>
+              <li
+                class="group border-orange-500 border-b-[1px] hover:bg-orange-500 py-[5px] pr-28 pl-4"
+              >
+                <a
+                  class="text-lg font-medium hover:underline hover:duration-100 duration-500 active:text-orange-500 text-orange-500 group-hover:text-white"
+                  href="shop.html"
+                  >shop</a
+                >
+              </li>
+            </ul>
+            <div>
+              <button
+                class="hover:bg-orange-500 mx-3 my-4 text-base bg-white hover:text-white text-orange-500 px-5 py-2 ring-1 ring-orange-500 rounded-md duration-1000 hover:scale-100 hover:translate-y-1"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  categories,and logo -->
+        <div class="md:flex relative items-center">
+          <!-- logo -->
+          <a
+            href="index.html"
+            class="flex items-center cursor-pointer px-2 hover:scale-105 duration-1000"
+          >
+            <h2
+              class="md:text-2xl text-base italic mr-1 px-3 py-[1px] text-orange-500 font-bold bg-white rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+            >
+              Ali's
+            </h2>
+            <span class="md:text-lg text-xs text-white font-bold">Shop</span>
+          </a>
+
+          <!-- categories -->
+          <div class="md:block hidden cursor-pointer pt-1 md:px-5 px-2 w-full">
+            <div
+              class="hover:scale-105 hover:translate-y-1 duration-1000 flex items-center"
+              onclick="categoryButton()"
+            >
+              <h2 class="md:text-base text-xs pb-1 font-medium text-white">
+                categroies
+              </h2>
+              <p
+                class="text-[12px] rotate-90 pl-1 -pb-5 font-semibold text-white"
+              >
+                >
+              </p>
+            </div>
+
+            <div
+              id="categorySec"
+              class="z-10 absolute hidden top-20 lg:right-5 right-1 bg-white shadow-2xl group-hover:block py-6 space-y-2"
+            >
+              <h4 class="text-base font-medium px-6">select categories</h4>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer py-2 px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Grogeries & Pets</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-52"></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full z-10 absolute md:left-[20.5rem] left-52 shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Cock pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peanuts Pets</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Coconut feds</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Dark-Chocolate</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Peanuts</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Food Casts</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Health & Beauty</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Women's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block py-4 w-full absolute md:left-[20.5rem] shadow-2xl bg-orange-500 text-white top-0 hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Lux Suban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Bio Amla</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier HairColor</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Garnier Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Fresher</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunto Color</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group relative">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Men's Fashion</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-3 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">SunSilk Shampo</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Humaliyai Facewash</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Peak nuts</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Gillete Shaw</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Beauty Saban</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nonocuts Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Nunts Wash</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Mother & Babby</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home & Life</h4>
+              </div>
+
+              <!-- sub cate -->
+              <div class="group">
+                <div
+                  class="group grid grid-cols-[92%_auto] gap-x-2 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white cursor-pointer px-3 items-center"
+                >
+                  <figure class="flex items-center space-x-2">
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium pr-32">Machine Tools</h4>
+                  </figure>
+                  <h2 class="text-lg font-bold pb-2 text-white pl-2">></h2>
+                </div>
+
+                <div
+                  class="group-hover:block w-full absolute md:left-[20.5rem] top-10 shadow-2xl bg-orange-500 text-white hidden"
+                >
+                  <div
+                    class="flex space-x-3 border-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Car Gairbox</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Screw Tayar</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Drum Body</h4>
+                  </div>
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Water Body</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">AirPressure</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Acid Cleaner</h4>
+                  </div>
+
+                  <div
+                    class="flex space-x-3 border-b-[1px] border-white w-full tracking-wide hover:bg-white hover:text-orange-500 px-3 py-3 items-center"
+                  >
+                    <input class="" type="radio" />
+                    <h4 class="text-sm font-medium">Tooler Screw</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Electricnic Devices</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-3 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">TV & Home Appliances</h4>
+              </div>
+
+              <div
+                class="group flex space-x-3 w-full tracking-wide text-gray-600 hover:bg-orange-500 hover:text-white px-3 pr-12 py-[6px] items-center"
+              >
+                <input class="" type="radio" />
+                <h4 class="text-sm font-medium">Home</h4>
+              </div>
+            </div>
+          </div>
+
+          <!--   -->
+        </div>
+
+        <!-- input -->
+        <div class="lg:w-[48%] w-[80%]">
+          <input
+            class="text-base text-gray-600 py-2 mt-1 px-4 w-full rounded-md focus:border-red-500 border border-white outline-none focus:ring-1 focus:ring-orange-500"
+            type="text"
+            placeholder="Search in Ali's Shop"
+          />
+        </div>
+
+        <!-- input right bars -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <!-- login&sign -->
+          <div class="flex items-center">
+            <div class="flex space-x-2 items-center">
+              <img
+                class="cursor-pointer w-6 h-6"
+                src="/images/icons8-user-100.png"
+                alt=""
+              />
+              <h4
+                onclick="loginButton()"
+                class="text-sm font-semibold text-white cursor-pointer"
+              >
+                login
+              </h4>
+
+              <!-- hidden form -->
+              <div
+                id="loginForm"
+                class="z-10 hidden absolute top-[88px] right-32 w-[40%] p-7 shadow bg-fuchsia-100 rounded-md justify-center"
+              >
+                <!-- logo -->
+                <div
+                  class="flex pb-4 pt-8 items-center justify-center cursor-pointer px-2 hover:scale-105 duration-1000"
+                >
+                  <h2
+                    class="md:text-3xl text-base italic mr-1 px-3 py-[1px] text-white font-bold bg-orange-500 rounded-[1.3rem] rounded-bl-sm rounded-tr-sm"
+                  >
+                    Ali's
+                  </h2>
+                  <span class="md:text-xl text-xs text-orange-500 font-bold"
+                    >Shop</span
+                  >
+                </div>
+                <div class="space-y-3">
+                  <div class="flex space-x-8 items-center justify-center">
+                    <div>
+                      <h2 class="text-xl font-semibold py-2">First Name</h2>
+                      <input
+                        id="firstName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div>
+                      <h2 class="text-xl font-semibold py-[6px]">Last Name</h2>
+                      <input
+                        id="lastName"
+                        class="border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                        type="text"
+                        placeholder="Enter Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">
+                      Email Address
+                    </h2>
+                    <input
+                      id="email"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="email"
+                      placeholder="Enter Email Address"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Phone Number</h2>
+                    <input
+                      id="phoneNumber"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2"
+                      type="number"
+                      placeholder="Enter Phone Number"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-xl font-semibold py-[6px]">Text Message</h2>
+                    <input
+                      id="textMessage"
+                      class="w-full border-[1px] rounded-md shadow focus:border-none border-gray-400 focus:outline-2 focus:outline-orange-600 px-4 py-2 pb-28 placeholder:text-start"
+                      type="text"
+                      placeholder="Enter Text Message"
+                    />
+                  </div>
+                  <button
+                    onclick="submitButton()"
+                    class="w-full text-center py-2 text-lg font-semibold bg-orange-500 shadow-lg rounded-md text-white hover:bg-orange-600"
+                  >
+                    Submit Your Form
+                  </button>
+                  <div class="flex items-center justify-center space-x-2">
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-gray-700 cursor-pointer"
+                    >
+                      Create a New Account?
+                    </h2>
+                    <h2
+                      class="text-sm font-semibold py-[6px] text-blue-600 hover:text-blue-700 cursor-pointer"
+                    >
+                      Sign up
+                    </h2>
+                  </div>
+                  <h2
+                    id="submitForm"
+                    class="hidden top-0 px-6 absolute text-green-400 text-lg font-semibold bg-white shadow-lg rounded-md p-4 border border-green-400"
+                  >
+                    Congratulations! 🎉 Your form has been successfully
+                    submitted. We'll send you an email shortly.
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- |||||| -->
+            <h2 class="text-sm font-semibold pl-3 pr-4 text-white">|</h2>
+
+            <h2
+              onclick="signupButton()"
+              class="text-sm font-semibold text-white cursor-pointer"
+            >
+              Sign up
+            </h2>
+            <div
+              id="login-popup"
+              tabindex="-1"
+              class="absolute hidden w-1/2 top-16 right-0 z-10 h-full items-center justify-center"
+            >
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                  <button
+                    type="button"
+                    class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="#c6c7c7"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        cliprule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close popup</span>
+                  </button>
+
+                  <div class="p-5">
+                    <h3 class="text-2xl mb-0.5 font-medium"></h3>
+                    <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+                    <div class="text-center">
+                      <p
+                        class="mb-3 text-2xl font-semibold leading-5 text-slate-900"
+                      >
+                        Login to your account
+                      </p>
+                      <p class="mt-2 text-sm leading-4 text-slate-600">
+                        You must be logged in to perform this action.
+                      </p>
+                    </div>
+
+                    <div class="mt-7 flex flex-col gap-2">
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/512317/github-142.svg"
+                          alt="GitHub"
+                          class="h-[18px] w-[18px]"
+                        />
+                        Continue with GitHub
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/475656/google-color.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with Google
+                      </button>
+
+                      <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/448234/linkedin.svg"
+                          alt="Google"
+                          class="h-[18px] w-[18px]"
+                        />Continue with LinkedIn
+                      </button>
+                    </div>
+
+                    <div
+                      class="flex w-full items-center gap-2 py-6 text-sm text-slate-600"
+                    >
+                      <div class="h-px w-full bg-slate-200"></div>
+                      OR
+                      <div class="h-px w-full bg-slate-200"></div>
+                    </div>
+
+                    <form class="w-full">
+                      <label for="email" class="sr-only">Email address</label>
+                      <input
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required=""
+                        class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Email Address"
+                        value=""
+                      />
+                      <label for="password" class="sr-only">Password</label>
+                      <input
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        required=""
+                        class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Password"
+                        value=""
+                      />
+                      <p class="mb-3 mt-2 text-sm text-gray-500">
+                        <a
+                          href="/forgot-password"
+                          class="text-blue-800 hover:text-blue-600"
+                          >Reset your password?</a
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+                      >
+                        Continue
+                      </button>
+                    </form>
+
+                    <div class="mt-6 text-center text-sm text-slate-600">
+                      Don't have an account?
+                      <a href="/signup" class="font-medium text-[#4285f4]"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- lang &cart -->
+          <div class="flex items-center space-x-3">
+            <!-- lang -->
+            <div class="group cursor-pointer">
+              <button class="flex items-center">
+                <h2 class="text-xl pb-1 font-semibold text-white">@</h2>
+                <h2 class="text-sm font-semibold text-white">EN</h2>
+                <p class="text-[12px] rotate-90 pl-1 font-semibold text-white">
+                  >
+                </p>
+              </button>
+
+              <div
+                class="hidden z-10 absolute top-16 right-24 bg-white shadow-xl group-hover:block p-5 space-y-3 pr-20"
+              >
+                <h4 class="text-xs font-medium">select language</h4>
+
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+                <div class="flex space-x-6 items-center">
+                  <input class="w-[20%]" type="radio" />
+                  <h4 class="text-xs font-medium">UR/Urdu</h4>
+                </div>
+              </div>
+            </div>
+            <!-- cart-image -->
+            <div onclick="cartButton()">
+              <img
+                class="hover:scale-110 duration-1000 w-7 h-7 cursor-pointer"
+                src="/images/icons8-cart-96.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              id="cartForm"
+              class="z-10 absolute hidden right-10 top-2 w-[34%] p-4 mx-auto mt-16"
+            >
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div
+                  class="flex items-center justify-between px-4 py-3 bg-gray-200"
+                >
+                  <h1 class="text-lg font-bold">Shopping Cart</h1>
+                  <span class="text-gray-600">(3 items)</span>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$29.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$19.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      class="h-16 w-16 object-contain rounded-lg mr-4"
+                      src="https://picsum.photos/200/200"
+                      alt="Product"
+                    />
+                    <div class="flex-1">
+                      <h2 class="text-lg font-bold">Product Title</h2>
+                      <span class="text-gray-600">$24.99</span>
+                    </div>
+                    <button class="text-gray-600 hover:text-red-500">
+                      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 13H5v-2h14v2z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-4 py-3 bg-gray-200">
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-lg">Total:</span>
+                    <span class="font-bold text-lg">$74.97</span>
+                  </div>
+                  <button
+                    class="block w-full mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div
+      class="items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5"
+      data-aos="fade-right"
+      data-aos-duration="800"
+    >
+      <div class="pr-2 md:mb-14 py-14 md:py-0">
+        <h1
+          class="text-3xl font-semibold text-blue-900 xl:text-5xl lg:text-3xl"
+        >
+          <span class="block w-full">Get a financial experience</span> for
+          growing your business!
+        </h1>
+        <p class="py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5">
+          Empowering you to make better financial decisions, We truly are
+          professional money planners...
+        </p>
+        <div class="mt-4">
+          <a
+            href="#contact"
+            class="px-5 py-3 text-lg tracking-wider text-white bg-blue-500 rounded-lg md:px-8 hover:bg-blue-600 group"
+            ><span>Explore More</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0">
+        <img
+          id="heroImg1"
+          class="transition-all duration-300 ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0"
+          src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png"
+          alt="Awesome hero page image"
+          width="500"
+          height="488"
+        />
+      </div>
+    </div>
+
+    <section
+      class="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <div
+        class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row"
+      >
+        <div class="sm:text-center lg:text-left">
+          <h1
+            class="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl"
+          >
+            <span class="block xl:inline">Data to enrich your</span>
+            <span class="block text-indigo-600 xl:inline">online business</span>
+          </h1>
+          <p
+            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+          >
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
+          <!-- Button Section -->
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a
+                href="#"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
+              >
+                Get started
+              </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a
+                href="#"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-800 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+              >
+                Live demo
+              </a>
+            </div>
+          </div>
+          <!-- End of Button Section -->
+        </div>
+
+        <!--   Image Section     -->
+        <div class="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
+          <img
+            class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            alt=""
+          />
+        </div>
+        <!--   End of Image Section     -->
+      </div>
+    </section>
+
+    <!-- heading of testimonial -->
+    <div class="z-0 container mx-auto text-center pt-12">
+      <h2 class="text-4xl font-bold mb-10">What Our Customers Say</h2>
+      <p class="text-lg">
+        Read what our satisfied customers have to say about our products and
+        services.
+      </p>
+    </div>
+
+    <div
+      class="z-10 flex lg:flex-row flex-col items-center justify-center lg:space-x-8 lg:space-y-0 space-y-10"
+    >
+      <div
+        class="relative z-0 flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+      >
+        <div
+          class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+        >
+          <span
+            class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+          ></span>
+          <div class="relative z-10 mx-auto max-w-md">
+            <span
+              class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-10 w-10 text-white transition-all"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+            </span>
+            <div
+              class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+            >
+              <p>
+                Perfect for learning how the framework works, prototyping a new
+                idea, or creating a demo to share online.
+              </p>
+            </div>
+            <div class="pt-5 text-base font-semibold leading-7">
+              <p>
+                <a
+                  href="#"
+                  class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                  >Read the docs &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+      >
+        <div
+          class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+        >
+          <span
+            class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+          ></span>
+          <div class="relative z-10 mx-auto max-w-md">
+            <span
+              class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-10 w-10 text-white transition-all"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+            </span>
+            <div
+              class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+            >
+              <p>
+                Perfect for learning how the framework works, prototyping a new
+                idea, or creating a demo to share online.
+              </p>
+            </div>
+            <div class="pt-5 text-base font-semibold leading-7">
+              <p>
+                <a
+                  href="#"
+                  class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                  >Read the docs &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="z-0 relative flex flex-col justify-center overflow-hidden py-6 sm:py-12"
+      >
+        <div
+          class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-lg hover:scale-105 duration-1000 border border-gray-300 transition-all hover:-translate-y-5 hover:shadow-lg rounded-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+        >
+          <span
+            class="absolute top-10 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"
+          ></span>
+          <div class="relative mx-auto max-w-md">
+            <span
+              class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-10 w-10 text-white transition-all"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+            </span>
+            <div
+              class="z-0 space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+            >
+              <p>
+                Perfect for learning how the framework works, prototyping a new
+                idea, or creating a demo to share online.
+              </p>
+            </div>
+            <div class="pt-5 text-base font-semibold leading-7">
+              <p>
+                <a
+                  href="#"
+                  class="text-sky-500 transition-all duration-300 group-hover:text-white"
+                  >Read the docs &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+    <script>
+      function submitButton() {
+        // Add your submission logic here
+        // For demonstration purposes, I'll just show the success message and clear the form fields
+        const subButton = document.getElementById("submitForm");
+
+        if (subButton.style.display === "none") {
+          subButton.style.display = "block";
+        } else {
+          subButton.style.display = "none";
+        }
+
+        document.getElementById("submitForm").classList.remove("hidden");
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phoneNumber").value = "";
+        document.getElementById("textMessage").value = "";
+      }
+    </script>
+
+    <script>
+      function signupButton() {
+        const signupButton = document.getElementById("login-popup");
+
+        if (signupButton.style.display === "none") {
+          signupButton.style.display = "block";
+        } else {
+          signupButton.style.display = "none";
+        }
+      }
+      function cartButton() {
+        const cartButton = document.getElementById("cartForm");
+
+        if (cartButton.style.display === "none") {
+          cartButton.style.display = "block";
+        } else {
+          cartButton.style.display = "none";
+        }
+      }
+
+      function loginButton() {
+        const loginButton = document.getElementById("loginForm");
+
+        if (loginButton.style.display === "none") {
+          loginButton.style.display = "block";
+        } else {
+          loginButton.style.display = "none";
+        }
+      }
+
+      const modeToggle = document.querySelector("#mode-toggle");
+
+      modeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+      function categoryButton() {
+        const firstButton = document.getElementById("categorySec");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 1tap
+      function firstTap() {
+        const firstButton = document.getElementById("firstTapSection");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2tap
+      function secondTap() {
+        const secondButton = document.getElementById("secondTapSection");
+
+        if (secondButton.style.display === "none") {
+          secondButton.style.display = "block";
+        } else {
+          secondButton.style.display = "none";
+        }
+      }
+
+      // 3tap
+      function thridTap() {
+        const thridButton = document.getElementById("thridTapSection");
+
+        if (thridButton.style.display === "none") {
+          thridButton.style.display = "block";
+        } else {
+          thridButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function fourthTap() {
+        const fourthButton = document.getElementById("fourthTapSection");
+
+        if (fourthButton.style.display === "none") {
+          fourthButton.style.display = "block";
+        } else {
+          fourthButton.style.display = "none";
+        }
+      }
+
+      // 5th
+      function fivethTap() {
+        const fivethButton = document.getElementById("fivethTapSection");
+
+        if (fivethButton.style.display === "none") {
+          fivethButton.style.display = "block";
+        } else {
+          fivethButton.style.display = "none";
+        }
+      }
+
+      // harmbur menu
+      function buttonShow() {
+        const menuButton = document.getElementById("menu");
+
+        if (menuButton.style.display === "none") {
+          menuButton.style.display = "block";
+        } else {
+          menuButton.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- horizonat tab script -->
+    <script>
+      // 1tap
+      function recentTabbutton() {
+        const firstButton = document.getElementById("recentTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 2ndrtap
+      function featureTabbutton() {
+        const firstButton = document.getElementById("featureTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 3rtap
+      function brandedTabbutton() {
+        const firstButton = document.getElementById("brandedTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+
+      // 4th
+      function latestTabbutton() {
+        const firstButton = document.getElementById("latestTab");
+
+        if (firstButton.style.display === "none") {
+          firstButton.style.display = "block";
+        } else {
+          firstButton.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
